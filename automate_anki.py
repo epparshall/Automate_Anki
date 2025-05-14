@@ -9,7 +9,7 @@ class Anki_Automate:
         self.deck_name = deck_name
         self.ANKI_CONNECT_URL = connect_url
     
-    def add_flashcard_with_media(self, front, back):
+    def add_flashcard(self, front, back):
 
         '''
         Add a single flashcard to Anki with optional sound and image.
@@ -112,5 +112,5 @@ if __name__ == "__main__":
         name_without_extension, extension = os.path.splitext(file_names[row])
         front = anki_obj.get_image_str("./French_IPA/Images/" + name_without_extension + ".jpg")
         back = f"{df.iloc[row, 0]} - {df.iloc[row, 1]} ({df.iloc[row, 2]}): {df.iloc[row, 3]} {anki_obj.get_audio_str('./French_IPA/Audio/' + name_without_extension + '.mp3')} {df.iloc[row, 4]}"
-        anki_obj.add_flashcard_with_media(front, back)    
+        anki_obj.add_flashcard(front, back)    
 
