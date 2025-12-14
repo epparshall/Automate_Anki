@@ -1,9 +1,71 @@
-# Automate Anki
-I created this project to automate the flashcard making process in Anki.
+# Anki Automate – Python Flashcard Creator
 
-## Instructions
-1. Install Anki Connect [here](https://ankiweb.net/shared/info/2055492159).<br>
-2. Create an Anki_Automate object using the line `anki_obj = Anki_Automate(deck_name=deck_name, connect_url=url)` where `deck_name` is a previously created deck, and `url` is the Anki Connect URL (by default `http://localhost:8765`).<br>
-3. Add a flashcard using the line `anki_obj.add_flashcard(front, back)` where `front` and `back` are strings of what should be on the card.<br>
-4. To add images or audio, call the functions `anki_obj.get_image_str(image_path)` and `anki_obj.get_audio_str(sound_path)` respectively. Both functions will return a string that is to be added to the `front` or `back` parameter of the `add_flashcard` function.<br>
-5. After running the code, be sure to click `sync` within Anki.
+**Anki Automate** is a Python script to easily create Anki decks via **AnkiConnect**, making it simple to add flashcards programmatically. It is designed for **basic text-based decks**, fully compatible with **Anki Desktop, iOS, and AnkiWeb sync**.
+
+---
+
+## Features
+
+- Add flashcards with **Front** and **Back** text fields.
+- Works with **AnkiConnect** (local server) to push cards directly to Anki.
+- Automatically avoids duplicate notes.
+- Fully syncable to **iOS and AnkiWeb** decks.
+- Lightweight and easy to extend for images or audio later.
+
+---
+
+## Requirements
+
+- Python 3.8+  
+- [Anki](https://apps.ankiweb.net/) installed on your computer  
+- [AnkiConnect add-on](https://ankiweb.net/shared/info/2055492159) installed in Anki  
+- `requests` and `pandas` Python libraries:
+
+    pip install requests pandas
+
+---
+
+## Usage
+
+1. Make sure **Anki** is running and **AnkiConnect** is installed.  
+2. Update the script with your desired deck name:
+
+    deck_name = "My Deck"
+    anki_url = "http://localhost:8765"
+    anki_obj = Anki_Automate(deck_name=deck_name, connect_url=anki_url)
+
+3. Add flashcards:
+
+    anki_obj.add_flashcard("Front text", "Back text")
+
+4. Run the script:
+
+    python anki_automate.py
+
+5. Open Anki on your computer or iOS device. **Sync with AnkiWeb** to access your deck anywhere.
+
+---
+
+## Example
+
+    from anki_automate import Anki_Automate
+
+    deck_name = "French IPA"
+    url = "http://localhost:8765"
+
+    anki_obj = Anki_Automate(deck_name=deck_name, connect_url=url)
+    anki_obj.add_flashcard("Front Example", "Back Example")
+
+---
+
+## Notes
+
+- Currently supports **text-only flashcards**.  
+- Future extensions can include **audio** or **images** for more complex decks.  
+- Flashcards are **added directly to Anki**, so ensure Anki is running and AnkiConnect is accessible.
+
+---
+
+## License
+
+MIT License
