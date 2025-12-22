@@ -1,68 +1,130 @@
-# Anki Automate – Python Flashcard Creator
+# Anki IPA Deck Generator – French & Spanish Phonetics Flashcards
 
-**Anki Automate** is a Python script to easily create Anki decks via **AnkiConnect**, making it simple to add flashcards programmatically. It is designed for **basic text-based decks**, fully compatible with **Anki Desktop, iOS, and AnkiWeb sync**.
+This Python script automatically creates rich Anki decks for learning **French** and **Spanish** IPA (International Phonetic Alphabet) symbols.  
+Each flashcard focuses on a single IPA sound and includes:
+
+- **Front**: The IPA symbol
+- **Back**:
+  - Articulation description (how to produce the sound)
+  - Example word in the target language
+  - Full IPA transcription of the example word (large and prominent)
+  - High-quality image related to the English translation of the example word (via Pixabay)
+  - Native pronunciation audio of the example word (via Google TTS)
+
+Cards are added directly to Anki using **AnkiConnect** and are fully syncable across Anki Desktop, iOS, Android, and AnkiWeb.
 
 ---
 
 ## Features
 
-- Add flashcards with **Front** and **Back** text fields.
-- Works with **AnkiConnect** (local server) to push cards directly to Anki.
-- Automatically avoids duplicate notes.
-- Fully syncable to **iOS and AnkiWeb** decks.
-- Lightweight and easy to extend for images or audio later.
+- Modular data in easy-to-edit **CSV files**
+- Automatic **TTS audio** generation (Google Text-to-Speech)
+- Automatic **image fetching** from Pixabay (optional)
+- Full **IPA transcription** displayed prominently
+- Prevents duplicates and updates existing cards
+- Clean HTML card layout
+- Easily extensible to other languages
+
+---
+
+## Folder Structure
+
+```
+anki_ipa_deck/
+├── main.py
+├── data/
+│   ├── french_ipa_cards.csv
+│   └── spanish_ipa_cards.csv
+└── .env
+```
 
 ---
 
 ## Requirements
 
-- Python 3.8+  
-- [Anki](https://apps.ankiweb.net/) installed on your computer  
-- [AnkiConnect add-on](https://ankiweb.net/shared/info/2055492159) installed in Anki  
-- `requests` and `pandas` Python libraries:
+- Python 3.8+
+- Anki (running)
+- AnkiConnect add-on
+- Python packages:
 
-    pip install requests pandas
+```bash
+pip install requests python-dotenv gtts
+```
+
+Optional:
+- Pixabay API key
+
+---
+
+## Setup
+
+1. Install Anki and AnkiConnect.
+2. Start Anki (AnkiConnect uses `http://localhost:8765`).
+3. Optional `.env` file:
+
+```env
+PIXABAY_API_KEY=your_api_key_here
+```
+
+If missing, images are skipped.
 
 ---
 
 ## Usage
 
-1. Make sure **Anki** is running and **AnkiConnect** is installed.  
-2. Update the script with your desired deck name:
+Run:
 
-    deck_name = "My Deck"
-    anki_url = "http://localhost:8765"
-    anki_obj = Anki_Automate(deck_name=deck_name, connect_url=anki_url)
+```bash
+python main.py
+```
 
-3. Add flashcards:
+- Builds **French IPA with Audio & Images**
+- Uncomment Spanish section to build Spanish
+- Optional deck deletion available in `main.py`
 
-    anki_obj.add_flashcard("Front text", "Back text")
-
-4. Run the script:
-
-    python anki_automate.py
-
-5. Open Anki on your computer or iOS device. **Sync with AnkiWeb** to access your deck anywhere.
+Sync Anki afterward.
 
 ---
 
-## Example
+## Customizing / Adding Languages
 
-    from anki_automate import Anki_Automate
+CSV columns:
 
-    deck_name = "French IPA"
-    url = "http://localhost:8765"
+- `ipa`
+- `description`
+- `example_word`
+- `english_translation`
+- `word_ipa`
 
-    anki_obj = Anki_Automate(deck_name=deck_name, connect_url=url)
-    anki_obj.add_flashcard("Front Example", "Back Example")
+Add a new CSV and wire it into `main.py`.
+
+---
+
+## Example Card Layout
+
+Front:
+
+```
+[i]
+```
+
+Back:
+
+```
+Example: lit [li]
+Tongue high and front, lips spread
+[Image]
+[Audio]
+```
 
 ---
 
 ## Notes
 
-- Currently supports **text-only flashcards**.  
-- Future extensions can include **audio** or **images** for more complex decks.  
-- Flashcards are **added directly to Anki**, so ensure Anki is running and AnkiConnect is accessible.
+- UTF-8 IPA fully supported
+- No duplicate cards
+- CSV fields with commas must be quoted
+- Images depend on Pixabay search quality
 
 ---
 
