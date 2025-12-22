@@ -32,12 +32,12 @@ class AnkiClient:
     def _get_media_str(self, path_or_url: str, is_audio=False) -> str:
         """Upload image or audio from local path or URL and return embed HTML/sound string"""
         if path_or_url.startswith("http://") or path_or_url.startswith("https://"):
-            print(f"Downloading from: {path_or_url[:80]}...")
+            print(f"    Downloading from: {path_or_url[:80]}...")
             response = requests.get(path_or_url, timeout=10)
             if response.status_code != 200:
                 raise ValueError(f"Failed to download file from URL: {path_or_url}")
             data_bytes = response.content
-            print(f"Downloaded {len(data_bytes)} bytes")
+            print(f"    Downloaded {len(data_bytes)} bytes")
 
             # Try to get filename from URL
             parsed = urlparse(path_or_url)
@@ -69,7 +69,7 @@ class AnkiClient:
                 data_bytes = f.read()
 
         # For images: basic validation
-        if not is_audio and len(data_bytes) < 500:  # raised threshold a bit
+        if not is_audio and len(data_bytes) < 500:
             raise ValueError(
                 f"Downloaded data too small ({len(data_bytes)} bytes), likely not an image"
             )
@@ -80,7 +80,7 @@ class AnkiClient:
         stored_filename = self._invoke(
             "storeMediaFile", {"filename": filename, "data": data_b64}
         )
-        print(f"Stored in Anki as: {stored_filename}")
+        print(f"    Stored in Anki as: {stored_filename}")
 
         if is_audio:
             return f"[sound:{stored_filename}]"
@@ -151,7 +151,7 @@ class AnkiClient:
 
 
 class MediaHelper:
-    """Helper class to get audio and images"""
+    """Helper class to get audio and images from Pixabay"""
 
     @staticmethod
     def generate_tts_audio(
@@ -177,71 +177,7 @@ class MediaHelper:
         return output_path
 
     @staticmethod
-    def get_unsplash_image(
-        query: str, unsplash_access_key: Optional[str] = None
-    ) -> Optional[str]:
-        """
-        Get an image URL from Unsplash API.
-        Requires free API key from: https://unsplash.com/developers
-
-        Args:
-            query: Search query for the image
-            unsplash_access_key: Your Unsplash API access key
-
-        Returns:
-            URL of the image, or None if not found
-        """
-        if not unsplash_access_key:
-            return None
-
-        url = "https://api.unsplash.com/search/photos"
-        headers = {"Authorization": f"Client-ID {unsplash_access_key}"}
-        params = {"query": query, "per_page": 1, "orientation": "landscape"}
-
-        try:
-            response = requests.get(url, headers=headers, params=params, timeout=10)
-            data = response.json()
-            if data.get("results") and len(data["results"]) > 0:
-                return data["results"][0]["urls"]["regular"]
-        except Exception as e:
-            print(f"Unsplash API error: {e}")
-        return None
-
-    @staticmethod
-    def get_pexels_image(
-        query: str, pexels_api_key: Optional[str] = None
-    ) -> Optional[str]:
-        """
-        Get an image URL from Pexels API (alternative to Unsplash).
-        Requires free API key from: https://www.pexels.com/api/
-
-        Args:
-            query: Search query for the image
-            pexels_api_key: Your Pexels API key
-
-        Returns:
-            URL of the image, or None if not found
-        """
-        if not pexels_api_key:
-            return None
-
-        url = "https://api.pexels.com/v1/search"
-        headers = {"Authorization": pexels_api_key}
-        params = {"query": query, "per_page": 1, "orientation": "landscape"}
-
-        try:
-            response = requests.get(url, headers=headers, params=params, timeout=10)
-            data = response.json()
-            if data.get("photos") and len(data["photos"]) > 0:
-                return data["photos"][0]["src"]["large"]
-        except Exception as e:
-            print(f"Pexels API error: {e}")
-        return None
-
-    @staticmethod
-    def get_pixabay_image(
-        query: str, pixabay_api_key: Optional[str] = None
-    ) -> Optional[str]:
+    def get_image(query: str, pixabay_api_key: str) -> Optional[str]:
         """
         Get an image URL from Pixabay API.
         Requires free API key from: https://pixabay.com/api/docs/
@@ -278,10 +214,9 @@ class MediaHelper:
 def build_ipa_deck(
     client: AnkiClient,
     deck_name: str,
-    ipa_cards: List[Tuple[str, str, str]],
+    ipa_cards: List[Tuple[str, str, str, str]],
     language_code: str,
-    image_api_key: Optional[str] = None,
-    image_service: str = "pixabay",
+    pixabay_api_key: Optional[str] = None,
 ):
     """
     Build an IPA deck with audio pronunciations and images.
@@ -289,16 +224,15 @@ def build_ipa_deck(
     Args:
         client: AnkiClient instance
         deck_name: Name of the deck to create
-        ipa_cards: List of tuples (IPA symbol, description, example word)
+        ipa_cards: List of tuples (IPA symbol, description, example word, English translation)
         language_code: Language code for TTS (e.g., 'fr', 'es', 'de', 'it')
-        image_api_key: Optional API key for image service
-        image_service: Which image service to use ('pixabay', 'pexels', or 'unsplash')
+        pixabay_api_key: Optional Pixabay API key for images
     """
 
     client.ensure_deck_exists(deck_name)
     media_helper = MediaHelper()
 
-    for ipa, description, example_word in ipa_cards:
+    for ipa, description, example_word, english_translation in ipa_cards:
         front = f"{ipa}"
         back = f"{description}<br><b>Example:</b> {example_word}"
 
@@ -307,16 +241,11 @@ def build_ipa_deck(
         audio_path = media_helper.generate_tts_audio(example_word, language_code)
         print("  ✓ Generated TTS audio")
 
-        # Get image
+        # Get image using English translation
         image_url = None
-        if image_api_key:
-            print(f"Fetching image for '{example_word}'...")
-            if image_service == "pixabay":
-                image_url = media_helper.get_pixabay_image(example_word, image_api_key)
-            elif image_service == "pexels":
-                image_url = media_helper.get_pexels_image(example_word, image_api_key)
-            elif image_service == "unsplash":
-                image_url = media_helper.get_unsplash_image(example_word, image_api_key)
+        if pixabay_api_key:
+            print(f"  Fetching image for '{english_translation}'...")
+            image_url = media_helper.get_image(english_translation, pixabay_api_key)
 
             if image_url:
                 print("  ✓ Found image")
@@ -333,75 +262,227 @@ def build_ipa_deck(
 
 
 if __name__ == "__main__":
-    # Install required packages first: pip install gtts python-dotenv
+    # Install required packages first: pip install gtts python-dotenv requests
 
     # French IPA cards
     french_ipa_cards = [
-        ("[i]", "Close front unrounded vowel", "île"),
-        ("[e]", "Close-mid front unrounded vowel", "été"),
-        ("[ɛ]", "Open-mid front unrounded vowel", "être"),
-        ("[a]", "Open front unrounded vowel", "chat"),
-        ("[ɑ]", "Open back unrounded vowel", "pâte"),
-        ("[ɔ]", "Open-mid back rounded vowel", "porte"),
-        ("[o]", "Close-mid back rounded vowel", "eau"),
-        ("[u]", "Close back rounded vowel", "tout"),
-        ("[y]", "Close front rounded vowel", "lune"),
-        ("[ø]", "Close-mid front rounded vowel", "deux"),
-        ("[œ]", "Open-mid front rounded vowel", "neuf"),
-        ("[ə]", "Mid central vowel (schwa)", "le"),
-        ("[ɛ̃]", "Nasal open-mid front vowel", "pain"),
-        ("[ɑ̃]", "Nasal open back vowel", "blanc"),
-        ("[ɔ̃]", "Nasal open-mid back vowel", "pont"),
-        ("[œ̃]", "Nasal open-mid front rounded vowel", "brun"),
-        ("[p]", "Voiceless bilabial plosive", "pain"),
-        ("[b]", "Voiced bilabial plosive", "beau"),
-        ("[t]", "Voiceless alveolar plosive", "tête"),
-        ("[d]", "Voiced alveolar plosive", "dans"),
-        ("[k]", "Voiceless velar plosive", "coeur"),
-        ("[g]", "Voiced velar plosive", "gare"),
-        ("[f]", "Voiceless labiodental fricative", "feu"),
-        ("[v]", "Voiced labiodental fricative", "vous"),
-        ("[s]", "Voiceless alveolar fricative", "sel"),
-        ("[z]", "Voiced alveolar fricative", "zéro"),
-        ("[ʃ]", "Voiceless postalveolar fricative", "chat"),
-        ("[ʒ]", "Voiced postalveolar fricative", "je"),
-        ("[m]", "Bilabial nasal", "mer"),
-        ("[n]", "Alveolar nasal", "nez"),
-        ("[ɲ]", "Palatal nasal", "agneau"),
-        ("[ŋ]", "Velar nasal", "parking"),
-        ("[l]", "Alveolar lateral approximant", "lune"),
-        ("[ʁ]", "Voiced uvular fricative", "rouge"),
-        ("[j]", "Palatal approximant", "yeux"),
-        ("[w]", "Labial-velar approximant", "oui"),
-        ("[ɥ]", "Labial-palatal approximant", "huit"),
+        # Vowels
+        (
+            "[i]",
+            "Tongue high and front, lips spread, mouth nearly closed",
+            "lit",
+            "bed",
+        ),
+        ("[e]", "Tongue mid-high and front, lips slightly spread", "café", "coffee"),
+        (
+            "[ɛ]",
+            "Tongue mid-low and front, mouth more open, lips spread",
+            "forêt",
+            "forest",
+        ),
+        ("[a]", "Tongue low and front, mouth wide open", "chat", "cat"),
+        ("[ɑ]", "Tongue low and back, mouth wide open", "pâte", "dough"),
+        (
+            "[ɔ]",
+            "Tongue mid-low and back, lips rounded, mouth half open",
+            "porte",
+            "door",
+        ),
+        (
+            "[o]",
+            "Tongue mid-high and back, lips rounded, mouth less open",
+            "gâteau",
+            "cake",
+        ),
+        ("[u]", "Tongue high and back, lips tightly rounded", "loup", "wolf"),
+        ("[y]", "Tongue high and front (like [i]), lips rounded", "lune", "moon"),
+        ("[ø]", "Tongue mid-high and front, lips rounded", "feu", "fire"),
+        (
+            "[œ]",
+            "Tongue mid-low and front, lips rounded, mouth more open",
+            "fleur",
+            "flower",
+        ),
+        (
+            "[ə]",
+            "Tongue mid-central, relaxed, lips neutral (the schwa)",
+            "cheval",
+            "horse",
+        ),
+        # Nasal vowels
+        (
+            "[ɛ̃]",
+            "Like [ɛ] but air flows through nose, mouth half open",
+            "pain",
+            "bread",
+        ),
+        (
+            "[ɑ̃]",
+            "Like [ɑ] but air flows through nose, mouth wide open",
+            "blanc",
+            "white",
+        ),
+        ("[ɔ̃]", "Like [ɔ] but air flows through nose, lips rounded", "pont", "bridge"),
+        (
+            "[œ̃]",
+            "Like [œ] but air flows through nose, lips rounded",
+            "parfum",
+            "perfume",
+        ),
+        # Plosives (stops)
+        (
+            "[p]",
+            "Close lips, build pressure, release without vocal cords",
+            "pain",
+            "bread",
+        ),
+        ("[b]", "Close lips, build pressure, release with vocal cords", "bois", "wood"),
+        (
+            "[t]",
+            "Tongue touches ridge behind teeth, release without vocal cords",
+            "table",
+            "table",
+        ),
+        (
+            "[d]",
+            "Tongue touches ridge behind teeth, release with vocal cords",
+            "dent",
+            "tooth",
+        ),
+        (
+            "[k]",
+            "Back of tongue touches soft palate, release without vocal cords",
+            "café",
+            "coffee",
+        ),
+        (
+            "[g]",
+            "Back of tongue touches soft palate, release with vocal cords",
+            "gare",
+            "station",
+        ),
+        # Fricatives
+        (
+            "[f]",
+            "Upper teeth touch lower lip, air flows through without vocal cords",
+            "fleur",
+            "flower",
+        ),
+        (
+            "[v]",
+            "Upper teeth touch lower lip, air flows through with vocal cords",
+            "verre",
+            "glass",
+        ),
+        (
+            "[s]",
+            "Tongue near ridge behind teeth, air hisses through without vocal cords",
+            "sel",
+            "salt",
+        ),
+        (
+            "[z]",
+            "Tongue near ridge behind teeth, air hisses through with vocal cords",
+            "zoo",
+            "zoo",
+        ),
+        (
+            "[ʃ]",
+            "Tongue pulled back, lips rounded, air flows without vocal cords",
+            "chapeau",
+            "hat",
+        ),
+        (
+            "[ʒ]",
+            "Tongue pulled back, lips rounded, air flows with vocal cords",
+            "jardin",
+            "garden",
+        ),
+        # Nasals
+        (
+            "[m]",
+            "Lips closed, air flows through nose with vocal cords",
+            "maison",
+            "house",
+        ),
+        (
+            "[n]",
+            "Tongue touches ridge behind teeth, air flows through nose with vocal cords",
+            "nez",
+            "nose",
+        ),
+        (
+            "[ɲ]",
+            "Tongue touches hard palate, air flows through nose with vocal cords",
+            "montagne",
+            "mountain",
+        ),
+        (
+            "[ŋ]",
+            "Back of tongue touches soft palate, air flows through nose with vocal cords",
+            "parking",
+            "parking",
+        ),
+        # Liquids
+        (
+            "[l]",
+            "Tongue tip touches ridge behind teeth, air flows around sides",
+            "lune",
+            "moon",
+        ),
+        (
+            "[ʁ]",
+            "Back of tongue near uvula, creates friction with vocal cords",
+            "rouge",
+            "red",
+        ),
+        # Approximants
+        (
+            "[j]",
+            "Tongue high and front near palate but not touching, with vocal cords",
+            "pied",
+            "foot",
+        ),
+        (
+            "[w]",
+            "Lips rounded, tongue high and back, glides to vowel with vocal cords",
+            "roi",
+            "king",
+        ),
+        (
+            "[ɥ]",
+            "Lips rounded, tongue high and front, glides to vowel with vocal cords",
+            "huile",
+            "oil",
+        ),
     ]
 
     # Spanish IPA cards example
     spanish_ipa_cards = [
-        ("[a]", "Open central vowel", "casa"),
-        ("[e]", "Close-mid front unrounded vowel", "peso"),
-        ("[i]", "Close front unrounded vowel", "sí"),
-        ("[o]", "Close-mid back rounded vowel", "como"),
-        ("[u]", "Close back rounded vowel", "tú"),
-        ("[p]", "Voiceless bilabial plosive", "peso"),
-        ("[b]", "Voiced bilabial plosive", "boca"),
-        ("[t]", "Voiceless alveolar plosive", "taza"),
-        ("[d]", "Voiced alveolar plosive", "dedo"),
-        ("[k]", "Voiceless velar plosive", "casa"),
-        ("[g]", "Voiced velar plosive", "gato"),
-        ("[tʃ]", "Voiceless postalveolar affricate", "chico"),
-        ("[f]", "Voiceless labiodental fricative", "fácil"),
-        ("[s]", "Voiceless alveolar fricative", "sol"),
-        ("[x]", "Voiceless velar fricative", "joven"),
-        ("[m]", "Bilabial nasal", "madre"),
-        ("[n]", "Alveolar nasal", "noche"),
-        ("[ɲ]", "Palatal nasal", "año"),
-        ("[l]", "Alveolar lateral approximant", "lado"),
-        ("[ʎ]", "Palatal lateral approximant", "llamar"),
-        ("[r]", "Alveolar tap", "pero"),
-        ("[r̄]", "Alveolar trill", "perro"),
-        ("[j]", "Palatal approximant", "bien"),
-        ("[w]", "Labial-velar approximant", "bueno"),
+        ("[a]", "Open central vowel", "casa", "house"),
+        ("[e]", "Close-mid front unrounded vowel", "peso", "weight"),
+        ("[i]", "Close front unrounded vowel", "piso", "floor"),
+        ("[o]", "Close-mid back rounded vowel", "como", "how"),
+        ("[u]", "Close back rounded vowel", "luna", "moon"),
+        ("[p]", "Voiceless bilabial plosive", "peso", "weight"),
+        ("[b]", "Voiced bilabial plosive", "boca", "mouth"),
+        ("[t]", "Voiceless alveolar plosive", "taza", "cup"),
+        ("[d]", "Voiced alveolar plosive", "dedo", "finger"),
+        ("[k]", "Voiceless velar plosive", "casa", "house"),
+        ("[g]", "Voiced velar plosive", "gato", "cat"),
+        ("[tʃ]", "Voiceless postalveolar affricate", "chico", "boy"),
+        ("[f]", "Voiceless labiodental fricative", "flor", "flower"),
+        ("[s]", "Voiceless alveolar fricative", "sol", "sun"),
+        ("[x]", "Voiceless velar fricative", "joven", "young"),
+        ("[m]", "Bilabial nasal", "madre", "mother"),
+        ("[n]", "Alveolar nasal", "noche", "night"),
+        ("[ɲ]", "Palatal nasal", "año", "year"),
+        ("[l]", "Alveolar lateral approximant", "lado", "side"),
+        ("[ʎ]", "Palatal lateral approximant", "llave", "key"),
+        ("[r]", "Alveolar tap", "pero", "but"),
+        ("[r̄]", "Alveolar trill", "perro", "dog"),
+        ("[j]", "Palatal approximant", "bien", "well"),
+        ("[w]", "Labial-velar approximant", "bueno", "good"),
     ]
 
     anki = AnkiClient("http://localhost:8765")
@@ -414,13 +495,23 @@ if __name__ == "__main__":
         print("   Images will be skipped. Add your key to .env to enable images.")
         print("   Get a free key at: https://pixabay.com/api/docs/\n")
 
+    # Delete existing deck to get fresh images (optional)
+    # Uncomment these lines to delete and recreate the deck:
+    try:
+        anki._invoke(
+            "deleteDecks",
+            {"decks": ["French IPA with Audio & Images"], "cardsToo": True},
+        )
+        print("🗑️  Deleted existing deck")
+    except:
+        pass
+
     build_ipa_deck(
         client=anki,
         deck_name="French IPA with Audio & Images",
         ipa_cards=french_ipa_cards,
         language_code="fr",
-        image_api_key=PIXABAY_API_KEY,
-        image_service="pixabay",
+        pixabay_api_key=PIXABAY_API_KEY,
     )
 
     # Uncomment to build Spanish deck too!
@@ -429,8 +520,7 @@ if __name__ == "__main__":
     #     deck_name="Spanish IPA with Audio & Images",
     #     ipa_cards=spanish_ipa_cards,
     #     language_code="es",
-    #     image_api_key=PIXABAY_API_KEY,
-    #     image_service="pixabay"
+    #     pixabay_api_key=PIXABAY_API_KEY,
     # )
 
     print("\n✓ Done! Open Anki desktop and sync.")
