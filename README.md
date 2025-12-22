@@ -1,133 +1,198 @@
-# Anki IPA Deck Generator – French & Spanish Phonetics Flashcards
+# Anki Language Deck Builder
 
-This Python script automatically creates rich Anki decks for learning **French** and **Spanish** IPA (International Phonetic Alphabet) symbols.  
-Each flashcard focuses on a single IPA sound and includes:
+**Automated creation of rich, media-enhanced Anki decks for any language**
 
-- **Front**: The IPA symbol
-- **Back**:
-  - Articulation description (how to produce the sound)
-  - Example word in the target language
-  - Full IPA transcription of the example word (large and prominent)
-  - High-quality image related to the English translation of the example word (via Pixabay)
-  - Native pronunciation audio of the example word (via Google TTS)
+This tool lets you generate high-quality Anki flashcards for **any language** you want to learn. Out of the box, it includes full support for **French** (with Spanish ready to enable), but the modular design makes adding new languages simple.
 
-Cards are added directly to Anki using **AnkiConnect** and are fully syncable across Anki Desktop, iOS, Android, and AnkiWeb.
+Supported deck types:
+- **IPA Phonetics** . Master individual sounds with articulation tips
+- **Pronunciation Rules** . Essential rules for authentic pronunciation
+- **Basic Vocabulary** . High-frequency words (perfect for the famous “top 625 words” deck)
+
+Every card includes:
+- Clean, styled HTML formatting
+- Native-speaker **audio** (Google TTS)
+- Relevant **images** (via Pixabay API)
+- Automatic tagging and **nested deck organization** (e.g., `French::IPA`, `Japanese::Pronunciation Rules`)
+
+Cards are added directly to Anki using **AnkiConnect** . No manual import needed.
 
 ---
 
 ## Features
 
-- Modular data in easy-to-edit **CSV files**
-- Automatic **TTS audio** generation (Google Text-to-Speech)
-- Automatic **image fetching** from Pixabay (optional)
-- Full **IPA transcription** displayed prominently
-- Prevents duplicates and updates existing cards
-- Clean HTML card layout
-- Easily extensible to other languages
+- **Language-Agnostic & Config-Driven** . Add any language or deck type via `config/languages.py`
+- **Smart Skipping** . Automatically skips decks that already exist in Anki
+- **Automatic Media** . TTS audio + high-quality image search
+- **Duplicate Handling** . Updates existing notes and prevents duplicates
+- **Nested Decks** . Clean hierarchy for multiple languages and deck types
+- **Highly Extensible** . New languages, cloze cards, custom note types
 
 ---
 
-## Folder Structure
+## Project Structure
 
 ```
-anki_ipa_deck/
-├── main.py
+anki-language-deck-builder/
+├── run.py                          # Easy launcher (run this)
+├── .env                            # PIXABAY_API_KEY (optional)
 ├── data/
-│   ├── french_ipa_cards.csv
-│   └── spanish_ipa_cards.csv
-└── .env
+│   ├── ipa_card_data/
+│   │   └── french_ipa_cards.csv
+│   ├── pronunciation_rules/
+│   │   └── french_rules.csv
+│   └── vocabulary/
+└── anki_language_decks/
+    ├── __init__.py
+    ├── main.py
+    ├── anki_client.py
+    ├── deck_builder.py
+    ├── media_helper.py
+    ├── csv_loader.py
+    └── config/
+        └── languages.py
 ```
 
 ---
 
 ## Requirements
 
-- Python 3.8+
-- Anki (running)
-- AnkiConnect add-on
-- Python packages:
+- **Python 3.8+**
+- **Anki** running with **AnkiConnect** enabled  
+  (default: `http://localhost:8765`)
+- Install dependencies:
 
 ```bash
 pip install requests python-dotenv gtts
 ```
 
 Optional:
-- Pixabay API key
+- Free Pixabay API key from pixabay.com/api/docs
 
 ---
 
 ## Setup
 
-1. Install Anki and AnkiConnect.
-2. Start Anki (AnkiConnect uses `http://localhost:8765`).
-3. Optional `.env` file:
+1. Install Anki and enable the AnkiConnect add-on.
+2. Start Anki.
+3. (Optional) Create a `.env` file in the project root:
 
 ```env
-PIXABAY_API_KEY=your_api_key_here
+PIXABAY_API_KEY=your_key_here
 ```
 
-If missing, images are skipped.
+Images are skipped if no key is provided.
 
 ---
 
 ## Usage
 
-Run:
+From the project root, run:
 
 ```bash
-python main.py
+python run.py
 ```
 
-- Builds **French IPA with Audio & Images**
-- Uncomment Spanish section to build Spanish
-- Optional deck deletion available in `main.py`
+- First run . Builds all configured decks
+- Subsequent runs . Skips existing decks automatically (very fast)
+- To force a full rebuild . Set `skip_existing_decks = False` in `main.py`
 
-Sync Anki afterward.
-
----
-
-## Customizing / Adding Languages
-
-CSV columns:
-
-- `ipa`
-- `description`
-- `example_word`
-- `english_translation`
-- `word_ipa`
-
-Add a new CSV and wire it into `main.py`.
+Open Anki and sync. Your nested decks will appear.
 
 ---
 
-## Example Card Layout
+## Adding New Languages or Decks
+
+All configuration lives in:
+
+```
+anki_language_decks/config/languages.py
+```
+
+Example . Adding a Japanese pronunciation rules deck:
+
+```python
+"Japanese": {
+    "code": "ja",
+    "subdecks": {
+        "Pronunciation Rules": {
+            "csv_folder": "data/pronunciation_rules",
+            "csv_file": "japanese_rules.csv",
+            "required_columns": [
+                "rule",
+                "explanation",
+                "example_word",
+                "example_ipa",
+                "image_query"
+            ],
+        }
+    }
+}
+```
+
+Create the corresponding CSV in `data/` and run the script again.
+
+---
+
+## Example Card Layouts
+
+### IPA Card (any language)
 
 Front:
-
 ```
-[i]
+[ʁ]
 ```
 
 Back:
-
 ```
-Example: lit [li]
-Tongue high and front, lips spread
-[Image]
-[Audio]
+Example: rouge [ʁuʒ]
+Tongue back, uvular fricative (gargle-like)
+English: red
+[Image] [Audio]
+```
+
+### Pronunciation Rules Card
+
+Front:
+```
+Nasal vowels
+```
+
+Back:
+```
+Vowels before N/M are nasalized
+Example: bon → [bɔ̃]
+[Image] [Audio]
+```
+
+### Vocabulary Card
+
+Front:
+```
+chat
+```
+
+Back:
+```
+cat
+Example: Le chat dort.
+[Image] [Audio]
 ```
 
 ---
 
-## Notes
+## Notes & Tips
 
-- UTF-8 IPA fully supported
-- No duplicate cards
-- CSV fields with commas must be quoted
-- Images depend on Pixabay search quality
+- All media is embedded directly in Anki
+- Google gTTS is reliable for most languages
+- Image quality depends on Pixabay results
+- To rebuild decks . Delete in Anki or disable skipping
+- Full UTF-8 support, including IPA symbols
 
 ---
 
 ## License
 
-MIT License
+MIT License . Feel free to use, modify, and share.
+
+Happy language learning 🌍✨
