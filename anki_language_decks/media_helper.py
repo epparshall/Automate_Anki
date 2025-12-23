@@ -2,8 +2,9 @@
 import os
 import tempfile
 from typing import Optional
+
 import requests
-from gtts import gTTS
+import edge_tts  # New import
 
 class MediaHelper:
     @staticmethod
@@ -12,8 +13,19 @@ class MediaHelper:
             safe_text = "".join(c for c in text if c.isalnum())[:30]
             output_path = os.path.join(tempfile.gettempdir(), f"{lang}_{safe_text}.mp3")
 
-        tts = gTTS(text=text, lang=lang)
-        tts.save(output_path)
+        # Map language codes to strong British voices when needed
+        if lang.lower() in ["en-gb", "en-uk"]:
+            voice = "en-GB-SoniaNeural"  # Excellent female British voice
+            # Alternatives: "en-GB-RyanNeural" (male), "en-GB-LibbyNeural"
+        else:
+            # Fallback to a good voice for other languages (e.g., French)
+            voice = "fr-FR-DeniseNeural" if lang == "fr" else "en-US-AriaNeural"
+
+        communicate = edge_tts.Communicate(text, voice)
+        # Save synchronously (edge-tts supports async, but this is simple)
+        import asyncio
+        asyncio.run(communicate.save(output_path))
+
         return output_path
 
     @staticmethod
