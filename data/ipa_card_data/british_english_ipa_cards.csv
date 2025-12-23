@@ -1,0 +1,45 @@
+ipa,description,example_word,english_translation,word_ipa
+iː,"Close front unrounded vowel (long 'ee' sound)",be,be,/biː/
+ɪ,"Near-close near-front unrounded vowel (short 'i' sound)",sit,sit,/sɪt/
+e,"Mid front unrounded vowel (like in 'bet' but shorter in RP)",bed,bed,/bed/
+æ,"Near-open front unrounded vowel (short 'a' sound)",cat,cat,/kæt/
+ɑː,"Open back unrounded vowel (long 'ah' sound)",car,car,/kɑː/
+ɒ,"Open back rounded vowel (short 'o' sound)",lot,lot,/lɒt/
+ɔː,"Open-mid back rounded vowel (long 'aw' sound)",thought,thought,/θɔːt/
+ʊ,"Near-close near-back rounded vowel (short 'oo' sound)",book,book,/bʊk/
+uː,"Close back rounded vowel (long 'oo' sound)",food,food,/fuːd/
+ʌ,"Open-mid back unrounded vowel (short 'u' sound)",cup,cup,/kʌp/
+ɜː,"Open-mid central unrounded vowel (long 'ur' sound)",nurse,nurse,/nɜːs/
+ə,"Mid central vowel (schwa, unstressed neutral sound)",about,about,/əˈbaʊt/
+eɪ,"Closing diphthong from mid to close front",day,day,/deɪ/
+aɪ,"Closing diphthong from open to close front",my,my,/maɪ/
+ɔɪ,"Closing diphthong from open-mid back to close front",boy,boy,/bɔɪ/
+əʊ,"Closing diphthong from mid central to close back",go,go,/ɡəʊ/
+aʊ,"Closing diphthong from open front to near-close back",now,now,/naʊ/
+ɪə,"Centring diphthong to schwa (near sound)",near,near,/nɪə/
+eə,"Centring diphthong to schwa (square sound)",square,square,/skeə/
+ʊə,"Centring diphthong to schwa (cure sound)",tour,tour,/tʊə/
+p,"Voiceless bilabial plosive",pen,pen,/pen/
+b,"Voiced bilabial plosive",bad,bad,/bæd/
+t,"Voiceless alveolar plosive",tea,tea,/tiː/
+d,"Voiced alveolar plosive",day,day,/deɪ/
+k,"Voiceless velar plosive",cat,cat,/kæt/
+ɡ,"Voiced velar plosive",go,go,/ɡəʊ/
+f,"Voiceless labiodental fricative",five,five,/faɪv/
+v,"Voiced labiodental fricative",very,very,/ˈveri/
+θ,"Voiceless dental fricative",think,think,/θɪŋk/
+ð,"Voiced dental fricative",this,this,/ðɪs/
+s,"Voiceless alveolar fricative",see,see,/siː/
+z,"Voiced alveolar fricative",zoo,zoo,/zuː/
+ʃ,"Voiceless postalveolar fricative ('sh' sound)",ship,ship,/ʃɪp/
+ʒ,"Voiced postalveolar fricative ('zh' sound)",vision,vision,/ˈvɪʒn/
+h,"Voiceless glottal fricative",hat,hat,/hæt/
+m,"Bilabial nasal",man,man,/mæn/
+n,"Alveolar nasal",no,no,/nəʊ/
+ŋ,"Velar nasal ('ng' sound)",sing,sing,/sɪŋ/
+l,"Alveolar lateral approximant",light,light,/laɪt/
+r,"Postalveolar approximant (non-rhotic in RP)",red,red,/red/
+j,"Palatal approximant ('y' sound)",yes,yes,/jes/
+w,"Labial-velar approximant",we,we,/wiː/
+tʃ,"Voiceless postalveolar affricate ('ch' sound)",church,church,/tʃɜːtʃ/
+dʒ,"Voiced postalveolar affricate ('j' sound)",judge,judge,/dʒʌdʒ/

@@ -1,0 +1,26 @@
+rule,explanation,example_word,example_ipa,image_query
+"Silent final consonants","Most final consonants are silent, especially S, T, D, X, P, Z. Remember CaReFuL: final C, R, F, L are usually pronounced.",parfait,/paʁ.fɛ/,perfect
+"CaReFuL exceptions","Final C, R, F, L (and sometimes B, K, Q) are pronounced at the end of words.",livre,/livʁ/,book
+"Nasal vowels basics","Vowels followed by M or N (in the same syllable) are nasalized: air flows through nose and mouth. The M/N is silent.",vin,/vɛ̃/,wine glass
+"AN/EN/EM nasal [ɑ̃]","AN, EN, EM at end or before consonant → nasal [ɑ̃] sound.",enfant,/ɑ̃.fɑ̃/,child
+"ON/OM nasal [ɔ̃]","ON, OM → nasal [ɔ̃] sound.",bonbon,/bɔ̃.bɔ̃/,candy
+"IN/IM/AIN/AIM/EIN nasal [ɛ̃]","IN, IM, AIN, AIM, EIN → nasal [ɛ̃] sound.",pain,/pɛ̃/,bread
+"UN/UM nasal [œ̃]","UN, UM → nasal [œ̃] (rounded) sound.",parfum,/paʁ.fœ̃/,perfume bottle
+"French R sound","The French R is guttural/uvular [ʁ], produced in the throat (like gargling).",rouge,/ʁuʒ/,red
+"French U sound [y]","U is a front rounded vowel: purse lips like 'oo' but say 'ee'.",tu,/ty/,lips
+"OU sound [u]","OU is back rounded like English 'oo' in food.",loup,/lu/,wolf
+"É accent [e]","É (acute accent) is closed [e], like 'ay' in 'day' but shorter.",café,/ka.fe/,coffee
+"È/Ê accent [ɛ]","È or Ê (grave or circumflex) is open [ɛ], like 'e' in 'bet'.",père,/pɛʁ/,father
+"Schwa (mute E)","Unaccented E in middle often [ə] (schwa) or drops entirely; final E usually silent.",le,/lə/,small
+"CH = [ʃ]","CH is 'sh' like English 'ship'.",chat,/ʃa/,cat
+"GN = [ɲ]","GN is like 'ny' in 'canyon'.",montagne,/mɔ̃.taɲ/,mountain
+"S between vowels [z]","S between vowels is voiced [z]; otherwise [s]. Final S silent (plural).",maison,/mɛ.zɔ̃/,house
+"Liaison: obligatory","Required after determiners (les, des, mon), pronouns (ils, vous), short adjectives.",les amis,/le.z‿a.mi/,friends
+"Liaison: optional","Possible in many cases; common in careful speech but often dropped casually.",tu as,/ty‿a/,you have
+"Liaison: forbidden","Never after 'et' (and), singular nouns, or aspirated H.",et un,/e œ̃/,no liaison
+"OI combination [wa]","OI is [wa] like 'wa' in 'watt'.",moi,/mwa/,mirror
+"EU/ŒU [ø]/[œ]","EU/ŒU closed [ø] (like German 'ö'); open [œ] before R or consonant.",bleu vs sœur,/blø/ vs /sœʁ/,blue sky
+"AI/EI [ɛ]","AI/EI usually [ɛ] like open E.",mais,/mɛ/,but
+"AU/EAU [o]","AU/EAU is closed [o] like 'oh'.",eau,/o/,water
+"Final ENT silent","ENT at end of 3rd person plural verbs is silent.",ils parlent,/il paʁl/,speaking
+"Stress and rhythm","French has even syllable stress (no strong accent); rhythm is syllable-timed.",bonjour,/bɔ̃.ʒuʁ/,hello greeting
