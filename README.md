@@ -63,7 +63,7 @@ anki-language-deck-builder/
 - Install dependencies:
 
 ```bash
-pip install requests python-dotenv gtts
+pip install -r requirements.txt
 ```
 
 Optional:
