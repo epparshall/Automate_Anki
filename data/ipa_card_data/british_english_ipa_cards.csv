@@ -1,45 +1,45 @@
 ipa,description,example_word,english_translation,word_ipa
-iː,"Close front unrounded vowel (long 'ee' sound)",be,be,/biː/
-ɪ,"Near-close near-front unrounded vowel (short 'i' sound)",sit,sit,/sɪt/
-e,"Mid front unrounded vowel (like in 'bet' but shorter in RP)",bed,bed,/bed/
-æ,"Near-open front unrounded vowel (short 'a' sound)",cat,cat,/kæt/
-ɑː,"Open back unrounded vowel (long 'ah' sound)",car,car,/kɑː/
-ɒ,"Open back rounded vowel (short 'o' sound)",lot,lot,/lɒt/
-ɔː,"Open-mid back rounded vowel (long 'aw' sound)",thought,thought,/θɔːt/
-ʊ,"Near-close near-back rounded vowel (short 'oo' sound)",book,book,/bʊk/
-uː,"Close back rounded vowel (long 'oo' sound)",food,food,/fuːd/
-ʌ,"Open-mid back unrounded vowel (short 'u' sound)",cup,cup,/kʌp/
-ɜː,"Open-mid central unrounded vowel (long 'ur' sound)",nurse,nurse,/nɜːs/
-ə,"Mid central vowel (schwa, unstressed neutral sound)",about,about,/əˈbaʊt/
-eɪ,"Closing diphthong from mid to close front",day,day,/deɪ/
-aɪ,"Closing diphthong from open to close front",my,my,/maɪ/
-ɔɪ,"Closing diphthong from open-mid back to close front",boy,boy,/bɔɪ/
-əʊ,"Closing diphthong from mid central to close back",go,go,/ɡəʊ/
-aʊ,"Closing diphthong from open front to near-close back",now,now,/naʊ/
-ɪə,"Centring diphthong to schwa (near sound)",near,near,/nɪə/
-eə,"Centring diphthong to schwa (square sound)",square,square,/skeə/
-ʊə,"Centring diphthong to schwa (cure sound)",tour,tour,/tʊə/
-p,"Voiceless bilabial plosive",pen,pen,/pen/
-b,"Voiced bilabial plosive",bad,bad,/bæd/
-t,"Voiceless alveolar plosive",tea,tea,/tiː/
-d,"Voiced alveolar plosive",day,day,/deɪ/
-k,"Voiceless velar plosive",cat,cat,/kæt/
-ɡ,"Voiced velar plosive",go,go,/ɡəʊ/
-f,"Voiceless labiodental fricative",five,five,/faɪv/
-v,"Voiced labiodental fricative",very,very,/ˈveri/
-θ,"Voiceless dental fricative",think,think,/θɪŋk/
-ð,"Voiced dental fricative",this,this,/ðɪs/
-s,"Voiceless alveolar fricative",see,see,/siː/
-z,"Voiced alveolar fricative",zoo,zoo,/zuː/
-ʃ,"Voiceless postalveolar fricative ('sh' sound)",ship,ship,/ʃɪp/
-ʒ,"Voiced postalveolar fricative ('zh' sound)",vision,vision,/ˈvɪʒn/
-h,"Voiceless glottal fricative",hat,hat,/hæt/
-m,"Bilabial nasal",man,man,/mæn/
-n,"Alveolar nasal",no,no,/nəʊ/
-ŋ,"Velar nasal ('ng' sound)",sing,sing,/sɪŋ/
-l,"Alveolar lateral approximant",light,light,/laɪt/
-r,"Postalveolar approximant (non-rhotic in RP)",red,red,/red/
-j,"Palatal approximant ('y' sound)",yes,yes,/jes/
-w,"Labial-velar approximant",we,we,/wiː/
-tʃ,"Voiceless postalveolar affricate ('ch' sound)",church,church,/tʃɜːtʃ/
-dʒ,"Voiced postalveolar affricate ('j' sound)",judge,judge,/dʒʌdʒ/
+iː,"Like the 'ee' in 'cheese'. A long, tense smile.",cheese,cheese,/tʃiːz/
+ɪ,"Like the 'i' in 'ship'. A short, relaxed sound.",ship,ship,/ʃɪp/
+e,"Like the 'e' in 'bed'. Mouth mid-open, tongue at the front.",bed,bed,/bed/
+æ,"Like the 'a' in 'cat'. Mouth wide, jaw dropped, tongue low and forward.",cat,cat,/kæt/
+ɑː,"Like the 'ar' in 'car'. A long, open sound, like at the dentist.",car,car,/kɑː/
+ɒ,Like the 'o' in 'dog'. A short sound with rounded lips and an open jaw.,dog,dog,/dɒɡ/
+ɔː,Like the 'oor' in 'door'. A long sound with rounded lips.,door,door,/dɔː/
+ʊ,Like the 'oo' in 'book'. A short sound with rounded lips.,book,book,/bʊk/
+uː,Like the 'oo' in 'goose'. A long sound with tightly rounded lips.,goose,goose,/ɡuːs/
+ʌ,"Like the 'u' in 'cup'. A short, open sound, like being punched in the gut.",cup,cup,/kʌp/
+ɜː,"Like the 'ur' in 'bird'. A long, flat, neutral sound.",bird,bird,/bɜːd/
+ə,"The 'a' in 'sofa'. A very short, relaxed, unstressed sound. The most common vowel in English.",sofa,sofa,/ˈsəʊfə/
+eɪ,Like the 'ay' in 'train'. Starts with 'e' (bed) and glides to 'i' (ship).,train,train,/treɪn/
+aɪ,Like the 'i' in 'bike'. Starts open 'a' (cat) and glides to 'i' (ship).,bike,bike,/baɪk/
+ɔɪ,Like the 'oy' in 'boy'. Starts with 'aw' (door) and glides to 'i' (ship).,boy,boy,/bɔɪ/
+əʊ,Like the 'o' in 'boat'. Starts neutral 'uh' (sofa) and glides to 'oo' (book).,boat,boat,/bəʊt/
+aʊ,Like the 'ow' in 'house'. Starts open 'a' (cat) and glides to 'oo' (book).,house,house,/haʊs/
+ɪə,Like the 'ear' in 'beer'. Starts with 'i' (ship) and glides to neutral 'uh' (sofa).,beer,beer,/bɪə(r)/
+eə,Like the 'air' in 'chair'. Starts with 'e' (bed) and glides to neutral 'uh' (sofa).,chair,chair,/tʃeə(r)/
+ʊə,"Like the 'our' in 'tour'. Starts with 'oo' (book) and glides to neutral 'uh' (sofa). (Becoming rare, often replaced by /ɔː/)",tour,tour,/tʊə(r)/
+p,"A puff of air from the lips, no voice. Like 'p' in 'park'.",pen,pen,/pen/
+b,A voiced sound from the lips. Like 'b' in 'bed'. Feel your throat vibrate.,box,box,/bɒks/
+t,"A sharp tap of the tongue tip behind the top teeth, no voice. Like 't' in 'tea'.",tea,tea,/tiː/
+d,A voiced tap of the tongue tip behind the top teeth. Like 'd' in 'door'.,desk,desk,/desk/
+k,"A hard sound from the back of the tongue, no voice. Like 'c' in 'key'.",key,key,/kiː/
+ɡ,"A voiced, hard sound from the back of the tongue. Like 'g' in 'gate'.",gate,gate,/ɡeɪt/
+f,"Top teeth on bottom lip, blow air, no voice. Like 'f' in 'face'.",fan,fan,/fæn/
+v,"Top teeth on bottom lip, make a buzzing sound. Like 'v' in 'van'.",van,van,/væn/
+θ,"Tongue tip between teeth, blow air, no voice. Like 'th' in 'thumb'.",thumb,thumb,/θʌm/
+ð,"Tongue tip between teeth, make a buzzing sound. Like 'th' in 'feather'.",feather,feather,/ˈfeðə(r)/
+s,"A hissing sound with the tongue tip near the roof of the mouth, no voice. Like 's' in 'snake'.",snake,snake,/sneɪk/
+z,A buzzing sound with the tongue tip near the roof of the mouth. Like 'z' in 'zoo'.,zoo,zoo,/zuː/
+ʃ,"A 'shushing' sound, lips slightly rounded, no voice. Like 'sh' in 'shoe'.",shoe,shoe,/ʃuː/
+ʒ,"A voiced 'sh' sound, like the 's' in 'treasure' or 'television'.",television,television,/ˈtelɪvɪʒn/
+h,A gentle puff of air from an open mouth. Like 'h' in 'hat'.,hat,hat,/hæt/
+m,"A humming sound with lips closed, air through the nose. Like 'm' in 'man'.",man,man,/mæn/
+n,"Tongue tip on the roof of the mouth, air through the nose. Like 'n' in 'nose'.",net,net,/net/
+ŋ,"A nasal sound from the back of the tongue, like the 'ng' in 'king'.",king,king,/kɪŋ/
+l,"Tongue tip on the roof of the mouth, air flows around the sides. Like 'l' in 'leg'.",leg,leg,/leɡ/
+r,"Tongue tip curled back but not touching, voiced. Like 'r' in 'red'. (RP is non-rhotic, so 'r' is only pronounced before a vowel).",red,red,/red/
+j,"A gliding sound, starts like 'ee' but moves. Like 'y' in 'yacht'.",yacht,yacht,/jɒt/
+w,A gliding sound with rounded lips. Like 'w' in 'web'.,web,web,/web/
+tʃ,A combination of 't' and 'sh'. Like 'ch' in 'church'.,church,church,/tʃɜːtʃ/
+dʒ,A combination of 'd' and the 'zh' sound from 'vision'. Like 'j' in 'jam'.,jam,jam,/dʒæm/
