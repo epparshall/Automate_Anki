@@ -11,22 +11,10 @@ LANGUAGES: Dict[str, Dict] = {
                 "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
                 "builder": "ipa",
             },
-            "Pronunciation Rules": {
-                "csv_folder": "data/pronunciation_rules",
-                "csv_file": "french_rules.csv",
-                "required_columns": ["rule", "explanation", "example_word", "example_ipa", "image_query"],
-                "builder": "pronunciation_rules",
-            },
-            # "Basic Vocabulary": {
-            #     "csv_folder": "data/vocabulary",
-            #     "csv_file": "french_top_625.csv",
-            #     "required_columns": ["word", "translation", "example_sentence"],
-            #     "builder": "vocabulary",
-            # },
         }
     },
     "English (British)": {
-        "code": "en-gb",  # Triggers British English accent in gTTS
+        "code": "en-gb",
         "subdecks": {
             "IPA": {
                 "csv_folder": "data/ipa_card_data",
@@ -34,14 +22,39 @@ LANGUAGES: Dict[str, Dict] = {
                 "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
                 "builder": "ipa",
             },
-            # Add more subdecks for British English later if desired
-            # "Pronunciation Rules": { ... },
-            # "Basic Vocabulary": { ... },
         }
     },
-    # Add more languages here in the future, e.g.:
-    # "Spanish": {
-    #     "code": "es",
-    #     "subdecks": { ... }
-    # },
+    "Spanish": {
+        "code": "es",
+        "subdecks": {
+            "IPA": {
+                "csv_folder": "data/ipa_card_data",
+                "csv_file": "spanish_ipa_cards.csv",
+                "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
+                "builder": "ipa",
+            },
+        }
+    },
+    "German": {
+        "code": "de",
+        "subdecks": {
+            "IPA": {
+                "csv_folder": "data/ipa_card_data",
+                "csv_file": "german_ipa_cards.csv",
+                "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
+                "builder": "ipa",
+            },
+        }
+    },
+    "Russian": {
+        "code": "ru",
+        "subdecks": {
+            "IPA": {
+                "csv_folder": "data/ipa_card_data",
+                "csv_file": "russian_ipa_cards.csv",
+                "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
+                "builder": "ipa",
+            },
+        }
+    },
 }

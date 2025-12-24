@@ -1,45 +1,45 @@
 ipa,description,example_word,english_translation,word_ipa
-iː,"Like the 'ee' in 'cheese'. A long, tense smile.",cheese,cheese,/tʃiːz/
-ɪ,"Like the 'i' in 'ship'. A short, relaxed sound.",ship,ship,/ʃɪp/
-e,"Like the 'e' in 'bed'. Mouth mid-open, tongue at the front.",bed,bed,/bed/
-æ,"Like the 'a' in 'cat'. Mouth wide, jaw dropped, tongue low and forward.",cat,cat,/kæt/
-ɑː,"Like the 'ar' in 'car'. A long, open sound, like at the dentist.",car,car,/kɑː/
-ɒ,Like the 'o' in 'dog'. A short sound with rounded lips and an open jaw.,dog,dog,/dɒɡ/
-ɔː,Like the 'oor' in 'door'. A long sound with rounded lips.,door,door,/dɔː/
-ʊ,Like the 'oo' in 'book'. A short sound with rounded lips.,book,book,/bʊk/
-uː,Like the 'oo' in 'goose'. A long sound with tightly rounded lips.,goose,goose,/ɡuːs/
-ʌ,"Like the 'u' in 'cup'. A short, open sound, like being punched in the gut.",cup,cup,/kʌp/
-ɜː,"Like the 'ur' in 'bird'. A long, flat, neutral sound.",bird,bird,/bɜːd/
-ə,"The 'a' in 'sofa'. A very short, relaxed, unstressed sound. The most common vowel in English.",sofa,sofa,/ˈsəʊfə/
-eɪ,Like the 'ay' in 'train'. Starts with 'e' (bed) and glides to 'i' (ship).,train,train,/treɪn/
-aɪ,Like the 'i' in 'bike'. Starts open 'a' (cat) and glides to 'i' (ship).,bike,bike,/baɪk/
-ɔɪ,Like the 'oy' in 'boy'. Starts with 'aw' (door) and glides to 'i' (ship).,boy,boy,/bɔɪ/
-əʊ,Like the 'o' in 'boat'. Starts neutral 'uh' (sofa) and glides to 'oo' (book).,boat,boat,/bəʊt/
-aʊ,Like the 'ow' in 'house'. Starts open 'a' (cat) and glides to 'oo' (book).,house,house,/haʊs/
-ɪə,Like the 'ear' in 'beer'. Starts with 'i' (ship) and glides to neutral 'uh' (sofa).,beer,beer,/bɪə(r)/
-eə,Like the 'air' in 'chair'. Starts with 'e' (bed) and glides to neutral 'uh' (sofa).,chair,chair,/tʃeə(r)/
-ʊə,"Like the 'our' in 'tour'. Starts with 'oo' (book) and glides to neutral 'uh' (sofa). (Becoming rare, often replaced by /ɔː/)",tour,tour,/tʊə(r)/
-p,"A puff of air from the lips, no voice. Like 'p' in 'park'.",pen,pen,/pen/
-b,A voiced sound from the lips. Like 'b' in 'bed'. Feel your throat vibrate.,box,box,/bɒks/
-t,"A sharp tap of the tongue tip behind the top teeth, no voice. Like 't' in 'tea'.",tea,tea,/tiː/
-d,A voiced tap of the tongue tip behind the top teeth. Like 'd' in 'door'.,desk,desk,/desk/
-k,"A hard sound from the back of the tongue, no voice. Like 'c' in 'key'.",key,key,/kiː/
-ɡ,"A voiced, hard sound from the back of the tongue. Like 'g' in 'gate'.",gate,gate,/ɡeɪt/
-f,"Top teeth on bottom lip, blow air, no voice. Like 'f' in 'face'.",fan,fan,/fæn/
-v,"Top teeth on bottom lip, make a buzzing sound. Like 'v' in 'van'.",van,van,/væn/
-θ,"Tongue tip between teeth, blow air, no voice. Like 'th' in 'thumb'.",thumb,thumb,/θʌm/
-ð,"Tongue tip between teeth, make a buzzing sound. Like 'th' in 'feather'.",feather,feather,/ˈfeðə(r)/
-s,"A hissing sound with the tongue tip near the roof of the mouth, no voice. Like 's' in 'snake'.",snake,snake,/sneɪk/
-z,A buzzing sound with the tongue tip near the roof of the mouth. Like 'z' in 'zoo'.,zoo,zoo,/zuː/
-ʃ,"A 'shushing' sound, lips slightly rounded, no voice. Like 'sh' in 'shoe'.",shoe,shoe,/ʃuː/
-ʒ,"A voiced 'sh' sound, like the 's' in 'treasure' or 'television'.",television,television,/ˈtelɪvɪʒn/
-h,A gentle puff of air from an open mouth. Like 'h' in 'hat'.,hat,hat,/hæt/
-m,"A humming sound with lips closed, air through the nose. Like 'm' in 'man'.",man,man,/mæn/
-n,"Tongue tip on the roof of the mouth, air through the nose. Like 'n' in 'nose'.",net,net,/net/
-ŋ,"A nasal sound from the back of the tongue, like the 'ng' in 'king'.",king,king,/kɪŋ/
-l,"Tongue tip on the roof of the mouth, air flows around the sides. Like 'l' in 'leg'.",leg,leg,/leɡ/
-r,"Tongue tip curled back but not touching, voiced. Like 'r' in 'red'. (RP is non-rhotic, so 'r' is only pronounced before a vowel).",red,red,/red/
-j,"A gliding sound, starts like 'ee' but moves. Like 'y' in 'yacht'.",yacht,yacht,/jɒt/
-w,A gliding sound with rounded lips. Like 'w' in 'web'.,web,web,/web/
-tʃ,A combination of 't' and 'sh'. Like 'ch' in 'church'.,church,church,/tʃɜːtʃ/
-dʒ,A combination of 'd' and the 'zh' sound from 'vision'. Like 'j' in 'jam'.,jam,jam,/dʒæm/
+[iː] (en-gb),"Like the 'ee' in 'cheese'. A long, tense smile.",cheese,cheese,/tʃiːz/
+[ɪ] (en-gb),"Like the 'i' in 'ship'. A short, relaxed sound.",ship,ship,/ʃɪp/
+[e] (en-gb),"Like the 'e' in 'bed'. Mouth mid-open, tongue at the front.",bed,bed,/bed/
+[æ] (en-gb),"Like the 'a' in 'cat'. Mouth wide, jaw dropped, tongue low and forward.",cat,cat,/kæt/
+[ɑː] (en-gb),"Like the 'ar' in 'car'. A long, open sound, like at the dentist.",car,car,/kɑː/
+[ɒ] (en-gb),Like the 'o' in 'dog'. A short sound with rounded lips and an open jaw.,dog,dog,/dɒɡ/
+[ɔː] (en-gb),Like the 'oor' in 'door'. A long sound with rounded lips.,door,door,/dɔː/
+[ʊ] (en-gb),Like the 'oo' in 'book'. A short sound with rounded lips.,book,book,/bʊk/
+[uː] (en-gb),Like the 'oo' in 'goose'. A long sound with tightly rounded lips.,goose,goose,/ɡuːs/
+[ʌ] (en-gb),"Like the 'u' in 'cup'. A short, open sound, like being punched in the gut.",cup,cup,/kʌp/
+[ɜː] (en-gb),"Like the 'ur' in 'bird'. A long, flat, neutral sound.",bird,bird,/bɜːd/
+[ə] (en-gb),"The 'a' in 'sofa'. A very short, relaxed, unstressed sound. The most common vowel in English.",sofa,sofa,/ˈsəʊfə/
+[eɪ] (en-gb),Like the 'ay' in 'train'. Starts with 'e' (bed) and glides to 'i' (ship).,train,train,/treɪn/
+[aɪ] (en-gb),Like the 'i' in 'bike'. Starts open 'a' (cat) and glides to 'i' (ship).,bike,bike,/baɪk/
+[ɔɪ] (en-gb),Like the 'oy' in 'boy'. Starts with 'aw' (door) and glides to 'i' (ship).,boy,boy,/bɔɪ/
+[əʊ] (en-gb),Like the 'o' in 'boat'. Starts neutral 'uh' (sofa) and glides to 'oo' (book).,boat,boat,/bəʊt/
+[aʊ] (en-gb),Like the 'ow' in 'house'. Starts open 'a' (cat) and glides to 'oo' (book).,house,house,/haʊs/
+[ɪə] (en-gb),Like the 'ear' in 'beer'. Starts with 'i' (ship) and glides to neutral 'uh' (sofa).,beer,beer,/bɪə(r)/
+[eə] (en-gb),Like the 'air' in 'chair'. Starts with 'e' (bed) and glides to neutral 'uh' (sofa).,chair,chair,/tʃeə(r)/
+[ʊə] (en-gb),"Like the 'our' in 'tour'. Starts with 'oo' (book) and glides to neutral 'uh' (sofa). (Becoming rare, often replaced by /ɔː/)",tour,tour,/tʊə(r)/
+[p] (en-gb),"A puff of air from the lips, no voice. Like 'p' in 'park'.",pen,pen,/pen/
+[b] (en-gb),A voiced sound from the lips. Like 'b' in 'bed'. Feel your throat vibrate.,box,box,/bɒks/
+[t] (en-gb),"A sharp tap of the tongue tip behind the top teeth, no voice. Like 't' in 'tea'.",tea,tea,/tiː/
+[d] (en-gb),A voiced tap of the tongue tip behind the top teeth. Like 'd' in 'door'.,desk,desk,/desk/
+[k] (en-gb),"A hard sound from the back of the tongue, no voice. Like 'c' in 'key'.",key,key,/kiː/
+[ɡ] (en-gb),"A voiced, hard sound from the back of the tongue. Like 'g' in 'go'.",gate,gate,/ɡeɪt/
+[f] (en-gb),"Top teeth on bottom lip, blow air, no voice. Like 'f' in 'face'.",fan,fan,/fæn/
+[v] (en-gb),"Top teeth on bottom lip, make a buzzing sound. Like 'v' in 'van'.",van,van,/væn/
+[θ] (en-gb),"Tongue tip between teeth, blow air, no voice. Like 'th' in 'thumb'.",thumb,thumb,/θʌm/
+[ð] (en-gb),"Tongue tip between teeth, make a buzzing sound. Like 'th' in 'feather'.",feather,feather,/ˈfeðə(r)/
+[s] (en-gb),"A hissing sound with the tongue tip near the roof of the mouth, no voice. Like 's' in 'snake'.",snake,snake,/sneɪk/
+[z] (en-gb),A buzzing sound with the tongue tip near the roof of the mouth. Like 'z' in 'zoo'.,zoo,zoo,/zuː/
+[ʃ] (en-gb),"A 'shushing' sound, lips slightly rounded, no voice. Like 'sh' in 'shoe'.",shoe,shoe,/ʃuː/
+[ʒ] (en-gb),"A voiced 'sh' sound, like the 's' in 'treasure' or 'television'.",television,television,/ˈtelɪvɪʒn/
+[h] (en-gb),A gentle puff of air from an open mouth. Like 'h' in 'hat'.,hat,hat,/hæt/
+[m] (en-gb),"A humming sound with lips closed, air through the nose. Like 'm' in 'man'.",man,man,/mæn/
+[n] (en-gb),"Tongue tip on the roof of the mouth, air through the nose. Like 'n' in 'nose'.",net,net,/net/
+[ŋ] (en-gb),"A nasal sound from the back of the tongue, like the 'ng' in 'king'.",king,king,/kɪŋ/
+[l] (en-gb),"Tongue tip on the roof of the mouth, air flows around the sides. Like 'l' in 'leg'.",leg,leg,/leɡ/
+[r] (en-gb),"Tongue tip curled back but not touching, voiced. Like 'r' in 'red'. (RP is non-rhotic, so 'r' is only pronounced before a vowel).",red,red,/red/
+[j] (en-gb),"A gliding sound, starts like 'ee' but moves. Like 'y' in 'yacht'.",yacht,yacht,/jɒt/
+[w] (en-gb),A gliding sound with rounded lips. Like 'w' in 'web'.,web,web,/web/
+[tʃ] (en-gb),A combination of 't' and 'sh'. Like 'ch' in 'church'.,church,church,/tʃɜːtʃ/
+[dʒ] (en-gb),A combination of 'd' and the 'zh' sound from 'vision'. Like 'j' in 'jam'.,jam,jam,/dʒæm/

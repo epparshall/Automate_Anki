@@ -63,9 +63,12 @@ class AnkiClient:
         if back_audio:
             back_html += self._store_media(back_audio, is_audio=True)
 
-        # Check for duplicate
+        # Check for duplicate on a per-language basis
         escaped = front.replace('"', '\\"')
-        existing = self._invoke("findNotes", {"query": f'deck:"{deck_name}" "Front:{escaped}"'})
+        language_tag = (tags or [""])[0]
+        query = f'tag:{language_tag} "Front:{escaped}"'
+        
+        existing = self._invoke("findNotes", {"query": query})
         if existing:
             print(f'Skipping duplicate: "{front[:50]}"')
             return

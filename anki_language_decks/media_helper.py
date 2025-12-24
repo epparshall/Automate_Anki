@@ -15,10 +15,15 @@ class MediaHelper:
 
         # Map language codes to strong British voices when needed
         if lang.lower() in ["en-gb", "en-uk"]:
-            voice = "en-GB-SoniaNeural"  # Excellent female British voice
-            # Alternatives: "en-GB-RyanNeural" (male), "en-GB-LibbyNeural"
+            voice = "en-GB-SoniaNeural"
+        elif lang.lower() == "es":
+            voice = "es-ES-ElviraNeural"
+        elif lang.lower() == "de":
+            voice = "de-DE-KatjaNeural"
+        elif lang.lower() == "ru":
+            voice = "ru-RU-SvetlanaNeural"
         else:
-            # Fallback to a good voice for other languages (e.g., French)
+            # Fallback to French or a default
             voice = "fr-FR-DeniseNeural" if lang == "fr" else "en-US-AriaNeural"
 
         communicate = edge_tts.Communicate(text, voice)
