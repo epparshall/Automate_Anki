@@ -2,18 +2,16 @@
 
 **Automated creation of rich, media-enhanced Anki decks for any language**
 
-This tool lets you generate high-quality Anki flashcards for **any language** you want to learn. Out of the box, it includes full support for **French** (with Spanish ready to enable), but the modular design makes adding new languages simple.
+This tool lets you generate high-quality Anki flashcards for **any language** you want to learn. Out of the box, it includes full support for **English (British), French, Spanish, German, and Russian** (IPA decks). The modular design makes adding new languages simple.
 
 Supported deck types:
 - **IPA Phonetics** . Master individual sounds with articulation tips
-- **Pronunciation Rules** . Essential rules for authentic pronunciation
-- **Basic Vocabulary** . High-frequency words (perfect for the famous “top 625 words” deck)
 
 Every card includes:
 - Clean, styled HTML formatting
-- Native-speaker **audio** (Google TTS)
+- Native-speaker **audio** (Edge TTS)
 - Relevant **images** (via Pixabay API)
-- Automatic tagging and **nested deck organization** (e.g., `French::IPA`, `Japanese::Pronunciation Rules`)
+- Automatic tagging and **nested deck organization** (e.g., `French::IPA`, `Spanish::IPA`)
 
 Cards are added directly to Anki using **AnkiConnect** . No manual import needed.
 
@@ -24,7 +22,7 @@ Cards are added directly to Anki using **AnkiConnect** . No manual import needed
 - **Language-Agnostic & Config-Driven** . Add any language or deck type via `config/languages.py`
 - **Smart Skipping** . Automatically skips decks that already exist in Anki
 - **Automatic Media** . TTS audio + high-quality image search
-- **Duplicate Handling** . Updates existing notes and prevents duplicates
+- **Duplicate Handling** . Skips notes if an identical "Front" field exists within the same language.
 - **Nested Decks** . Clean hierarchy for multiple languages and deck types
 - **Highly Extensible** . New languages, cloze cards, custom note types
 
@@ -95,7 +93,7 @@ python run.py
 
 - First run . Builds all configured decks
 - Subsequent runs . Skips existing decks automatically (very fast)
-- To force a full rebuild . Set `skip_existing_decks = False` in `main.py`
+- To force a full rebuild . Delete decks and notes from Anki, then delete the corresponding CSV file(s) and re-run.
 
 Open Anki and sync. Your nested decks will appear.
 
@@ -109,22 +107,19 @@ All configuration lives in:
 anki_language_decks/config/languages.py
 ```
 
-Example . Adding a Japanese pronunciation rules deck:
+Example . Adding a Japanese IPA deck:
 
 ```python
 "Japanese": {
-    "code": "ja",
+    "code": "ja", # ISO 639-1 code
+    "tts_voice": "ja-JP-NanamiNeural", # Check Edge TTS voices
     "subdecks": {
-        "Pronunciation Rules": {
-            "csv_folder": "data/pronunciation_rules",
-            "csv_file": "japanese_rules.csv",
-            "required_columns": [
-                "rule",
-                "explanation",
-                "example_word",
-                "example_ipa",
-                "image_query"
-            ],
+        "IPA": {
+            "csv_folder": "data/ipa_card_data",
+            "csv_file": "japanese_ipa_cards.csv",
+            "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
+            # If using custom models/fields, add relevant config here.
+            # Otherwise, it will use the default 'Basic' Anki model.
         }
     }
 }
@@ -140,7 +135,7 @@ Create the corresponding CSV in `data/` and run the script again.
 
 Front:
 ```
-[ʁ]
+[ʁ] (fr)
 ```
 
 Back:
@@ -151,40 +146,12 @@ English: red
 [Image] [Audio]
 ```
 
-### Pronunciation Rules Card
-
-Front:
-```
-Nasal vowels
-```
-
-Back:
-```
-Vowels before N/M are nasalized
-Example: bon → [bɔ̃]
-[Image] [Audio]
-```
-
-### Vocabulary Card
-
-Front:
-```
-chat
-```
-
-Back:
-```
-cat
-Example: Le chat dort.
-[Image] [Audio]
-```
-
 ---
 
 ## Notes & Tips
 
 - All media is embedded directly in Anki
-- Google gTTS is reliable for most languages
+- Edge TTS is reliable for most languages
 - Image quality depends on Pixabay results
 - To rebuild decks . Delete in Anki or disable skipping
 - Full UTF-8 support, including IPA symbols
