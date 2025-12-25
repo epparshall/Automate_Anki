@@ -40,7 +40,11 @@ def main():
             builder.build_pronunciation_rules_deck(language, cards, lang_code)
             built_count += 1
 
-        # Add more deck types here later
+        if "Basic Vocabulary" in subdecks:
+            cfg = subdecks["Basic Vocabulary"]
+            cards = load_csv_data(cfg["csv_folder"], cfg["csv_file"], cfg["required_columns"])
+            builder.build_vocabulary_deck(language, cards, lang_code)
+            built_count += 1
 
     print(f"\n✅ Done! Processed {built_count} deck type(s). Existing decks were skipped automatically.")
 

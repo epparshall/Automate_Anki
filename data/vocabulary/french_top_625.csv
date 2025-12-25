@@ -1,4 +1,80 @@
 word,translation,example_sentence
-chat,cat,"Le chat est sur la table."
-chien,dog,"Le chien aboie."
-maison,house,"J'habite dans une grande maison."
+le (fr),the,Le chat dort.
+de (fr),of/from,Un verre de vin.
+un (fr),a/an,J'ai un livre.
+être (fr),to be,Je suis content.
+et (fr),and,Un chat et un chien.
+à (fr),to/at/in,Je vais à Paris.
+il (fr),he/it,Il est grand.
+avoir (fr),to have,J'ai une voiture.
+ne (fr),not (negation part 1),Je ne sais pas.
+je (fr),I,Je parle français.
+son (fr),his/her/its,C'est son livre.
+que (fr),that/which/what,Le livre que je lis.
+se (fr),oneself (reflexive),Il se lève.
+qui (fr),who/which,L'homme qui parle.
+ce (fr),this/that,Ce garçon est gentil.
+dans (fr),in/into/inside,Le chat est dans la boîte.
+en (fr),in/by/as,Je suis en France.
+du (fr),of the/from the (de + le),Le livre du professeur.
+elle (fr),she/it,Elle est intelligente.
+au (fr),to the/at the (à + le),Je vais au marché.
+de (fr),some/any (partitive),Je veux de l'eau.
+ce (fr),it/this/that is,C'est une table.
+le (fr),it/him (direct object),Je le vois.
+pas (fr),not (negation part 2),Je ne sais pas.
+pour (fr),for/to,Un cadeau pour toi.
+vous (fr),you (formal/plural),Vous êtes gentils.
+par (fr),by/through,Le livre est écrit par lui.
+sur (fr),on/upon,Le livre est sur la table.
+faire (fr),to do/to make,Je dois faire mes devoirs.
+plus (fr),more,Je veux plus de gâteau.
+dire (fr),to say/to tell,Il va dire la vérité.
+me (fr),me/to me,Il me parle.
+on (fr),one/we/people,On va au cinéma.
+mon (fr),my,C'est mon ami.
+lui (fr),him/to him/her,Je lui donne un livre.
+nous (fr),we/us,Nous aimons la France.
+comme (fr),like/as,Il est fort comme un lion.
+mais (fr),but,"Je suis fatigué, mais content."
+pouvoir (fr),to be able (can),Je peux le faire.
+avec (fr),with,Je sors avec des amis.
+tout (fr),all/everything,Il a tout mangé.
+y (fr),there,J'y vais.
+aller (fr),to go,Je vais à la plage.
+voir (fr),to see,Je vois un oiseau.
+bien (fr),well/good,C'est bien !
+où (fr),where,Où est la gare ?
+sans (fr),without,Café sans sucre.
+ma (fr),my (f.),C'est ma sœur.
+tu (fr),you (informal),Tu es mon ami.
+ou (fr),or,Thé ou café ?
+si (fr),if/so,"S'il pleut, je reste."
+savoir (fr),to know,Je sais la réponse.
+moi (fr),me (emphatic),"Moi, je suis d`accord."
+te (fr),you (object),Je te vois.
+homme (fr),man,C'est un homme grand.
+femme (fr),woman/wife,La femme lit un livre.
+temps (fr),time/weather,Je n'ai pas le temps.
+vouloir (fr),to want,Je veux un croissant.
+jour (fr),day,Bonne journée !
+votre (fr),your (formal),Voici votre clé.
+chose (fr),thing,C'est une petite chose.
+vie (fr),life,C'est la vie !
+autre (fr),other/another,Je veux un autre verre.
+grand (fr),big/tall/great,Un grand arbre.
+petit (fr),small/little,Un petit chat.
+encore (fr),again/still,Encore une fois.
+nouveau (fr),new,Un nouveau livre.
+trouver (fr),to find,Je ne peux pas le trouver.
+donner (fr),to give,Donne-moi le sel.
+même (fr),same/even,C'est la même chose.
+œil (fr),eye,Il a un œil bleu.
+passer (fr),to pass/spend,Je vais passer chez toi.
+prendre (fr),to take,Je prends le bus.
+monde (fr),world,Le monde est grand.
+main (fr),hand,Lave tes mains.
+tête (fr),head,J'ai mal à la tête.
+cœur (fr),heart,Mon cœur bat vite.
+maison (fr),house,Je rentre à la maison.
+eau (fr),water,"Un verre d'eau, s'il vous plaît."
