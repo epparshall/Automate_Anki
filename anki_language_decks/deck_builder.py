@@ -1,4 +1,5 @@
 # deck_builder.py
+import re
 from typing import List, Dict, Optional
 
 from .anki_client import AnkiClient
@@ -10,7 +11,7 @@ class DeckBuilder:
         self,
         anki_client: AnkiClient,
         pixabay_key: Optional[str] = None,
-        skip_existing_decks: bool = True,   # ← This line was missing in your file
+        skip_existing_decks: bool = True,
     ):
         self.anki = anki_client
         self.media = MediaHelper()
@@ -31,9 +32,13 @@ class DeckBuilder:
             return
 
         print(f"   → Building {deck_name} ({len(cards)} cards)")
+        processed_fronts = set()
 
         for card in cards:
             front = f"<big>{card['ipa']}</big>"
+            if front in processed_fronts:
+                continue
+            processed_fronts.add(front)
 
             back = (
                 f"<b>Example:</b> {card['example_word']} <big>{card['word_ipa']}</big><br><br>"
@@ -50,7 +55,7 @@ class DeckBuilder:
                 back=back,
                 back_image=image_url,
                 back_audio=audio_path,
-                tags=[language.lower(), "ipa"],
+                tags=[language.lower().replace(' ', '-'), "ipa"],
             )
 
     def build_pronunciation_rules_deck(self, language: str, cards: List[Dict[str, str]], lang_code: str):
@@ -62,9 +67,14 @@ class DeckBuilder:
             return
 
         print(f"   → Building {deck_name} ({len(cards)} cards)")
+        processed_fronts = set()
 
         for card in cards:
             front = card["rule"]
+            if front in processed_fronts:
+                continue
+            processed_fronts.add(front)
+            
             back = card["explanation"]
 
             example_word = card.get("example_word")
@@ -82,7 +92,7 @@ class DeckBuilder:
                 back=back,
                 back_image=image_url,
                 back_audio=audio_path,
-                tags=[language.lower(), "pronunciation"],
+                tags=[language.lower().replace(' ', '-'), "pronunciation"],
             )
 
     def build_vocabulary_deck(self, language: str, cards: List[Dict[str, str]], lang_code: str):
@@ -94,18 +104,26 @@ class DeckBuilder:
             return
 
         print(f"   → Building {deck_name} ({len(cards)} cards)")
+        processed_fronts = set()
 
         for card in cards:
-            word = card["word"]
+            word_with_suffix = card["word"]
+            
+            front = word_with_suffix
+            if front in processed_fronts:
+                continue
+            processed_fronts.add(front)
+            
             translation = card["translation"]
             sentence = card.get("example_sentence", "")
+            
+            clean_word = re.sub(r'\s*\([^)]*\)$', '', word_with_suffix).strip()
 
-            front = word
             back = f"<b>{translation}</b>"
             if sentence:
                 back += f"<br><br><i>Example:</i> {sentence}"
 
-            audio_path = self.media.generate_tts_audio(word, lang_code)
+            audio_path = self.media.generate_tts_audio(clean_word, lang_code)
             image_url = self.media.get_image(translation, self.pixabay_key or "")
 
             self.anki.add_note(
@@ -114,5 +132,5 @@ class DeckBuilder:
                 back=back,
                 back_image=image_url,
                 back_audio=audio_path,
-                tags=[language.lower(), "vocabulary"],
+                tags=[language.lower().replace(' ', '-'), "vocabulary"],
             )
