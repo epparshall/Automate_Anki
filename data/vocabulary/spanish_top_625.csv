@@ -1,51 +1,542 @@
 word,translation,example_sentence
-de (es),of/from,Soy de España.
-la (es),the (f.),La casa es grande.
-que (es),that/which,El libro que leo.
-el (es),the (m.),El perro ladra.
-en (es),in/on/at,El gato está en la caja.
-y (es),and,Té y café.
-a (es),to/at,Voy a la playa.
-los (es),the (m. pl.),Los niños juegan.
-se (es),oneself (reflexive),Él se levanta.
-un (es),a/an,Tengo un coche.
-por (es),for/by/through,Gracias por la ayuda.
-qué (es),what,¿Qué hora es?
-me (es),me,Me gusta la música.
-una (es),a/an (f.),Es una buena idea.
-no (es),no/not,No tengo tiempo.
-con (es),with,Café con leche.
-para (es),for/to,Un regalo para ti.
-su (es),his/her/your (formal),Es su casa.
-las (es),the (f. pl.),Las flores son bonitas.
-como (es),like/as,Frío como el hielo.
-más (es),more,Quiero más agua.
-este (es),this,Este libro es interesante.
-le (es),to him/her,Le di el libro.
-yo (es),I,Yo soy de México.
-lo (es),it (direct object),No lo sé.
-todo (es),all/everything,Comió todo el pastel.
-pero (es),but,"Es caro, pero bueno."
-mi (es),my,Mi amigo es alto.
-ya (es),already/now,Ya terminé.
-también (es),also/too,Yo también quiero ir.
-así (es),like this/so,Hazlo así.
-dos (es),two,Tengo dos hermanos.
-vida (es),life,La vida es bella.
-muy (es),very,Estoy muy cansado.
-vez (es),time/occasion,Había una vez...
-mucho (es),a lot/much,Tengo mucho trabajo.
-sólo (es),only,Sólo quiero un café.
-nos (es),us,Nos vamos mañana.
-algo (es),something,Quiero algo de beber.
-gracias (es),thank you,Muchas gracias.
-casa (es),house,Estoy en casa.
-nada (es),nothing,No sé nada.
-ahora (es),now,Hazlo ahora.
-cada (es),each/every,Cada día es diferente.
-ver (es),to see,Quiero ver una película.
-mundo (es),world,El mundo es grande.
-tan (es),so/as,Es tan bonito.
-día (es),day,Hoy es un buen día.
-uno (es),one,Uno para mí.
-bien (es),well,"Estoy bien, gracias."
+el,the (m.),El gato duerme.
+de,of/from,Un vaso de agua.
+que,that/which/what,El libro que leo.
+y,and,Tú y yo.
+a,to/at,Voy a la escuela.
+en,in/on,Estoy en casa.
+un,a/an (m.),Un perro grande.
+ser,to be (permanent),Soy estudiante.
+se,oneself (reflexive),Se llama María.
+no,no/not,No lo sé.
+haber,to have (auxiliary),He comido ya.
+por,for/by/through,Por la mañana.
+con,with,Voy con mi amigo.
+su,his/her/their/your,Es su libro.
+para,for/to/in order to,Un regalo para ti.
+como,as/like/how,Como un león.
+estar,to be (temporary),Estoy cansado.
+tener,to have,Tengo hambre.
+le,to him/her/you,Le doy el libro.
+lo,it/him (object),Lo veo.
+todo,all/everything,Todo está bien.
+pero,but,Quiero pero no puedo.
+más,more,Quiero más café.
+hacer,to do/make,Hago mi tarea.
+o,or,¿Té o café?
+poder,can/to be able,Puedo nadar.
+decir,to say/tell,Digo la verdad.
+este,this (m.),Este libro es bueno.
+ir,to go,Voy al parque.
+otro,other/another,Otro día.
+ese,that (m.),Ese coche es rápido.
+la,the (f.),La casa es grande.
+si,if,Si llueve me quedo.
+me,me/to me,Me gusta el chocolate.
+ya,already/now,Ya terminé.
+ver,to see,Veo un pájaro.
+porque,because,Porque tengo frío.
+dar,to give,Dame el libro.
+cuando,when,Cuando llegues llámame.
+él,he,Él es alto.
+muy,very,Muy bonito.
+sin,without,Sin azúcar.
+vez,time/occasion,Una vez más.
+mucho,much/many,Mucho trabajo.
+saber,to know (fact),Sé la respuesta.
+qué,what,¿Qué haces?
+sobre,on/about/over,Sobre la mesa.
+mi,my,Mi casa.
+alguno,some/any,Algún día.
+mismo,same,El mismo problema.
+yo,I,Yo hablo español.
+también,also/too,Yo también.
+hasta,until/even,Hasta mañana.
+año,year,El año pasado.
+dos,two,Dos gatos.
+querer,to want/love,Quiero comer.
+entre,between/among,Entre tú y yo.
+así,so/thus/like this,Así es la vida.
+primero,first,El primer día.
+desde,from/since,Desde ayer.
+grande,big/great,Una casa grande.
+eso,that (neuter),Eso es verdad.
+con,with,Con mucho gusto.
+nos,us/to us,Nos vemos mañana.
+llegar,to arrive,Llego en cinco minutos.
+pasar,to pass/happen,¿Qué pasa?
+tiempo,time/weather,No tengo tiempo.
+ella,she,Ella es inteligente.
+sí,yes,Sí claro.
+día,day,Buenos días.
+uno,one,Uno más.
+bien,well/good,Muy bien gracias.
+poco,little/few,Un poco de pan.
+deber,must/should,Debo estudiar.
+entonces,then/so,Entonces vamos.
+poner,to put/place,Pon el libro aquí.
+cosa,thing,Una cosa importante.
+tanto,so much/many,Tanto trabajo.
+hombre,man,Un hombre alto.
+parecer,to seem/appear,Parece cansado.
+nuestro,our,Nuestro coche.
+tan,so/as,Tan bonito.
+donde,where,¿Dónde está?
+ahora,now,Ahora mismo.
+parte,part,Una parte del libro.
+después,after/later,Después de comer.
+vida,life,La vida es bella.
+quedar,to stay/remain,Me quedo aquí.
+siempre,always,Siempre feliz.
+creer,to believe/think,Creo que sí.
+hablar,to speak/talk,Hablo español.
+llevar,to carry/wear,Llevo una chaqueta.
+dejar,to leave/let,Deja el libro ahí.
+nada,nothing,No hay nada.
+cada,each/every,Cada día.
+seguir,to follow/continue,Sigue adelante.
+menos,less,Menos azúcar por favor.
+nuevo,new,Un coche nuevo.
+encontrar,to find,No puedo encontrarlo.
+algo,something,Algo interesante.
+solo,only/alone,Solo un minuto.
+decir,to tell/say,Dice que sí.
+año,year,Este año.
+hombre,man,El hombre trabaja.
+antes,before,Antes de salir.
+mundo,world,El mundo entero.
+aquí,here,Estoy aquí.
+mujer,woman/wife,La mujer lee.
+tres,three,Tres días.
+casa,house,Mi casa es pequeña.
+misma,same (f.),La misma cosa.
+gobierno,government,El gobierno decide.
+salir,to leave/go out,Salgo a las ocho.
+sea,be (subjunctive),Sea lo que sea.
+nunca,never,Nunca he estado allí.
+país,country,Un país hermoso.
+cómo,how,¿Cómo estás?
+estar,to be/to stay,Estoy en casa.
+hablar,to speak,Hablamos mañana.
+trabajo,work/job,Mucho trabajo hoy.
+mes,month,El próximo mes.
+querer,to want,Quiero dormir.
+bajo,under/low,Bajo la mesa.
+mismo,same/self,Yo mismo lo hice.
+forma,form/way,De esta forma.
+contra,against,Contra el viento.
+también,too/also,Yo también voy.
+país,country/nation,Mi país natal.
+hacia,towards,Hacia el norte.
+sólo,only,Sólo tú.
+durante,during,Durante el verano.
+saber,to know,No lo sé.
+vida,life,La vida es corta.
+haber,to have (aux),Ha llegado ya.
+allí,there,Allí está.
+noche,night,Buenas noches.
+agua,water (f.),Un vaso de agua.
+tanto,so much,Tanto tiempo.
+luego,then/later,Hasta luego.
+hora,hour/time,¿Qué hora es?
+mucho,a lot,Me gusta mucho.
+cuál,which/what,¿Cuál prefieres?
+manera,way/manner,De esta manera.
+gente,people,Mucha gente aquí.
+estado,state,El estado actual.
+tener,to have,Tengo frío.
+mejor,better/best,El mejor día.
+mano,hand (f.),Dame la mano.
+problema,problem,Sin problemas.
+perder,to lose,No quiero perder.
+padre,father,Mi padre trabaja.
+sentir,to feel,Me siento bien.
+momento,moment,Un momento por favor.
+grupo,group,Un grupo grande.
+vez,time (instance),Esta vez.
+lugar,place,Un lugar bonito.
+caso,case,En este caso.
+fin,end,Al fin llegamos.
+semana,week,La próxima semana.
+mano,hand,Lávate las manos.
+empresa,company,Una gran empresa.
+venir,to come,Ven aquí.
+considerar,to consider,Considero que sí.
+niño,child/boy,El niño juega.
+comenzar,to begin,Comenzamos ahora.
+presentar,to present,Te presento a María.
+crecer,to grow,Las plantas crecen.
+pedir,to ask for/request,Pido ayuda.
+recibir,to receive,Recibo un regalo.
+producir,to produce,Producir alimentos.
+conseguir,to get/obtain,Conseguir trabajo.
+edad,age,¿Qué edad tienes?
+pueblo,town/people,Un pueblo pequeño.
+ojo,eye,Ojos azules.
+dios,god,Dios mío.
+tipo,type/kind/guy,Un tipo raro.
+entender,to understand,No entiendo.
+importante,important,Muy importante.
+hecho,fact/done,Un hecho importante.
+cara,face,Una cara bonita.
+mayor,older/bigger,Mi hermano mayor.
+razón,reason/right,Tienes razón.
+persona,person,Una persona amable.
+final,end/final,Al final del día.
+historia,story/history,Una historia interesante.
+través,through,A través de la ventana.
+dentro,inside,Dentro de la casa.
+mil,thousand,Mil gracias.
+hoy,today,Hoy es lunes.
+luz,light (f.),La luz del sol.
+palabra,word,Una palabra difícil.
+madre,mother,Mi madre cocina.
+esperar,to wait/hope,Espero que sí.
+cuatro,four,Cuatro estaciones.
+lado,side,Al otro lado.
+conocer,to know (person/place),Conozco a María.
+cambiar,to change,Cambiar de opinión.
+ciudad,city,Una ciudad grande.
+minuto,minute,Un minuto más.
+cuerpo,body,El cuerpo humano.
+cuenta,account/bill,La cuenta por favor.
+buscar,to look for,Busco mis llaves.
+sistema,system,Un buen sistema.
+aunque,although/even though,Aunque llueva voy.
+programa,program,Un programa nuevo.
+cuestión,question/matter,Una cuestión importante.
+volver,to return,Vuelvo mañana.
+llamar,to call,Llámame más tarde.
+vivir,to live,Vivo en Madrid.
+punto,point/period,Punto final.
+hijo,son,Mi hijo estudia.
+alto,tall/high,Un edificio alto.
+acción,action,Pasar a la acción.
+ninguno,none/no,Ningún problema.
+mayor,greater/older,La mayor parte.
+pequeño,small,Un perro pequeño.
+verdad,truth,La pura verdad.
+derecho,right/straight,Todo recto.
+acabar,to finish/end,Acabo de llegar.
+segundo,second,El segundo piso.
+ejemplo,example,Por ejemplo.
+servir,to serve,¿En qué puedo servirle?
+existe,exists,No existe tal cosa.
+proceso,process,Un proceso largo.
+realidad,reality,La realidad es otra.
+medio,half/middle/means,En medio de la calle.
+necesitar,to need,Necesito ayuda.
+comprender,to understand,Comprendo perfectamente.
+único,only/unique,El único problema.
+sentido,sense/meaning,Tiene sentido.
+resultado,result,El resultado final.
+fuerza,strength/force,Con mucha fuerza.
+campo,field/countryside,En el campo.
+proyecto,project,Un nuevo proyecto.
+pie,foot,A pie.
+general,general,En general.
+cabeza,head,Me duele la cabeza.
+público,public,El transporte público.
+centro,center,En el centro de la ciudad.
+especial,special,Un día especial.
+voz,voice,Una voz suave.
+forma,form/shape,En buena forma.
+valor,value,De gran valor.
+muerte,death,La vida y la muerte.
+político,political/politician,Un tema político.
+social,social,La vida social.
+escribir,to write,Escribo una carta.
+cierto,certain/true,Es cierto.
+difícil,difficult,Muy difícil.
+pregunta,question,Una buena pregunta.
+imagen,image,Una imagen clara.
+sala,room/hall,La sala de estar.
+falta,lack/mistake,Hace falta más tiempo.
+causa,cause,La causa del problema.
+relación,relation/relationship,Una buena relación.
+mí,me (after preposition),Para mí.
+claro,clear,Claro que sí.
+futuro,future,En el futuro.
+ciudad,city,La ciudad es grande.
+largo,long,Un camino largo.
+papel,paper/role,Un papel importante.
+zona,zone/area,Una zona peligrosa.
+número,number,¿Cuál es tu número?
+puerta,door,Cierra la puerta.
+mayor,bigger/older,El mayor de todos.
+historia,history/story,La historia de España.
+varias,several (f.),Varias veces.
+crear,to create,Crear algo nuevo.
+segundo,second,En un segundo.
+nombre,name,¿Cuál es tu nombre?
+respuesta,answer,La respuesta correcta.
+cinco,five,Cinco minutos.
+información,information,Más información.
+obra,work (art/construction),Una obra de arte.
+interés,interest,De gran interés.
+color,color,¿Qué color prefieres?
+desarrollar,to develop,Desarrollar una idea.
+expresar,to express,Expresar sentimientos.
+cantidad,quantity/amount,Gran cantidad.
+mercado,market,El mercado local.
+común,common,Un error común.
+servicio,service,Un buen servicio.
+mantener,to maintain/keep,Mantener la calma.
+realizar,to carry out/achieve,Realizar un sueño.
+efecto,effect,El efecto es inmediato.
+oferta,offer,Una buena oferta.
+sociedad,society,La sociedad moderna.
+natural,natural,Es natural.
+total,total,El total es cien.
+situación,situation,Una situación difícil.
+actual,current/present,La situación actual.
+normal,normal,Es normal.
+militar,military,Servicio militar.
+objetivo,objective/goal,El objetivo principal.
+menos,less/except,Todos menos yo.
+establecer,to establish,Establecer reglas.
+nacional,national,El himno nacional.
+cultural,cultural,Evento cultural.
+aparecer,to appear,Aparece de repente.
+terminar,to finish/end,Terminar el trabajo.
+atención,attention,¡Atención por favor!
+idea,idea,Buena idea.
+sentido,sense/feeling,El sentido común.
+millón,million,Un millón de gracias.
+mientras,while,Mientras tanto.
+necesario,necessary,Es necesario.
+demasiado,too much,Demasiado tarde.
+economía,economy,La economía global.
+experiencia,experience,Mucha experiencia.
+anterior,previous/earlier,El día anterior.
+paso,step/passage,Paso a paso.
+señor,mister/sir,Buenos días señor.
+hija,daughter,Mi hija pequeña.
+igual,equal/same,Es igual.
+arte,art,El arte moderno.
+cerca,near/close,Muy cerca de aquí.
+paz,peace,Paz y amor.
+especie,species/kind,Una especie rara.
+nadie,nobody,No hay nadie.
+dato,data/fact,Un dato importante.
+carácter,character,Un buen carácter.
+principal,main/principal,La razón principal.
+elemento,element,Un elemento clave.
+director,director,El director general.
+base,base/basis,La base del problema.
+nivel,level,A nivel internacional.
+producto,product,Un nuevo producto.
+resto,rest/remainder,El resto del día.
+condición,condition,En buenas condiciones.
+posible,possible,Todo es posible.
+comunicación,communication,Buena comunicación.
+diferente,different,Muy diferente.
+abrir,to open,Abre la ventana.
+político,political,Sistema político.
+incluir,to include,Incluir a todos.
+control,control,Bajo control.
+actividad,activity,Mucha actividad.
+posición,position,En primera posición.
+orden,order,En orden alfabético.
+conseguir,to achieve/get,Conseguir el objetivo.
+representar,to represent,Representar al país.
+educación,education,Buena educación.
+estructura,structure,La estructura básica.
+diferencia,difference,Una gran diferencia.
+función,function,La función principal.
+comercial,commercial,Centro comercial.
+banco,bank/bench,Voy al banco.
+unidad,unit,Una unidad más.
+aplicar,to apply,Aplicar la regla.
+señora,mrs./lady,Buenos días señora.
+permitir,to allow/permit,No está permitido.
+personal,personal/staff,Asunto personal.
+material,material,Material escolar.
+miembro,member,Un miembro del equipo.
+internacional,international,Vuelo internacional.
+plazo,term/deadline,A corto plazo.
+capacidad,capacity,Gran capacidad.
+frente,front/forehead,Al frente de la clase.
+responder,to answer/respond,Responde la pregunta.
+modelo,model,Un modelo nuevo.
+existir,to exist,Dejar de existir.
+opinión,opinion,Mi opinión personal.
+línea,line,En línea recta.
+tratamiento,treatment,Un buen tratamiento.
+reciente,recent,Un evento reciente.
+igual,equal/same,De igual manera.
+presidente,president,El presidente habla.
+precio,price,Un precio alto.
+plan,plan,Un buen plan.
+favor,favor,Por favor.
+especialmente,especially,Especialmente hoy.
+acuerdo,agreement,De acuerdo.
+ganar,to win/earn,Quiero ganar.
+aún,still/yet,Aún no ha llegado.
+tarde,late/afternoon,Demasiado tarde.
+semana,week,La semana próxima.
+central,central,La parte central.
+europeo,European,La Unión Europea.
+ley,law,La ley prohíbe.
+muerto,dead,Está muerto.
+verdadero,true/real,Un amigo verdadero.
+interior,interior/inside,En el interior.
+presencia,presence,Tu presencia importa.
+conocimiento,knowledge,Mucho conocimiento.
+cambio,change,Un gran cambio.
+continuar,to continue,Continuar adelante.
+medida,measure,A medida que crece.
+oficina,office,En la oficina.
+clase,class/kind,Una clase de matemáticas.
+simple,simple,Es muy simple.
+ayudar,to help,¿Puedo ayudarte?
+guerra,war,La guerra terminó.
+estudio,study/studio,Un estudio científico.
+aire,air,Aire fresco.
+participar,to participate,Quiero participar.
+cualquier,any/whatever,Cualquier día.
+sol,sun,El sol brilla.
+época,era/time/season,En esa época.
+industria,industry,La industria automotriz.
+derecha,right (direction),A la derecha.
+recordar,to remember,No recuerdo.
+manera,way/manner,De ninguna manera.
+izquierda,left (direction),A la izquierda.
+tirar,to throw/pull,Tira la pelota.
+lleno,full,El vaso está lleno.
+ambiente,environment,El medio ambiente.
+leer,to read,Me gusta leer.
+propio,own,Mi propio negocio.
+muerto,dead/died,Ha muerto.
+ocupar,to occupy,Ocupar un lugar.
+partido,party/match,Un partido de fútbol.
+seguro,sure/safe/insurance,Estoy seguro.
+señalar,to point out/indicate,Señalar el camino.
+limitar,to limit,Limitar el tiempo.
+objeto,object,Un objeto extraño.
+camino,road/way,El camino correcto.
+ciencia,science,La ciencia moderna.
+compañía,company,Una buena compañía.
+cultura,culture,La cultura española.
+mesa,table,La mesa está puesta.
+calle,street,En la calle principal.
+afirmar,to affirm/state,Afirmar con seguridad.
+nacional,national,El parque nacional.
+perro,dog,Un perro grande.
+gato,cat,El gato duerme.
+libre,free,Tiempo libre.
+largo,long,Un río largo.
+ayuda,help,Necesito ayuda.
+exigir,to demand/require,Exigir respeto.
+negro,black,Un gato negro.
+blanco,white,Una camisa blanca.
+rojo,red,Una rosa roja.
+verde,green,Hierba verde.
+azul,blue,El cielo azul.
+amarillo,yellow,Una flor amarilla.
+grande,big,Una casa grande.
+pequeño,small,Un libro pequeño.
+alto,tall/high,Un árbol alto.
+bajo,short/low,Un muro bajo.
+bueno,good,Un buen amigo.
+malo,bad,Mal tiempo.
+bonito,pretty/nice,Qué bonito.
+feo,ugly,Un edificio feo.
+feliz,happy,Muy feliz.
+triste,sad,Estoy triste.
+caliente,hot,Café caliente.
+frío,cold,Agua fría.
+calor,heat,Hace calor.
+fresco,fresh/cool,Pan fresco.
+dulce,sweet,Muy dulce.
+amargo,bitter,Sabor amargo.
+salado,salty,Demasiado salado.
+rico,rich/delicious,Muy rico.
+pobre,poor,Gente pobre.
+joven,young,Un hombre joven.
+viejo,old,Un coche viejo.
+fuerte,strong,Muy fuerte.
+débil,weak,Me siento débil.
+rápido,fast/quick,Un coche rápido.
+lento,slow,Demasiado lento.
+fácil,easy,Es muy fácil.
+seis,six,Seis meses.
+siete,seven,Siete días.
+ocho,eight,Ocho horas.
+nueve,nine,Nueve años.
+diez,ten,Diez euros.
+cien,hundred,Cien personas.
+pan,bread,Pan fresco.
+leche,milk (f.),Un vaso de leche.
+café,coffee,Un café solo.
+té,tea,Té verde.
+vino,wine,Una copa de vino.
+cerveza,beer,Una cerveza fría.
+carne,meat (f.),Carne asada.
+pescado,fish,Pescado fresco.
+pollo,chicken,Pollo al horno.
+arroz,rice,Arroz con pollo.
+pasta,pasta,Pasta italiana.
+sopa,soup,Sopa caliente.
+ensalada,salad (f.),Ensalada fresca.
+fruta,fruit (f.),Fruta del día.
+verdura,vegetable,Verduras frescas.
+huevo,egg,Huevos fritos.
+queso,cheese,Queso manchego.
+azúcar,sugar,Sin azúcar.
+sal,salt (f.),Poca sal.
+aceite,oil,Aceite de oliva.
+mantequilla,butter (f.),Pan con mantequilla.
+arroz,rice,Un plato de arroz.
+comida,food/meal (f.),La comida está lista.
+comer,to eat,Vamos a comer.
+beber,to drink,Quiero beber agua.
+desayuno,breakfast,El desayuno es importante.
+almuerzo,lunch,A la hora del almuerzo.
+cena,dinner,La cena está servida.
+hambre,hunger (f.),Tengo mucha hambre.
+sed,thirst (f.),Tengo sed.
+delicioso,delicious,Está delicioso.
+sabroso,tasty,Muy sabroso.
+cocinar,to cook,Me gusta cocinar.
+restaurante,restaurant,Vamos al restaurante.
+bar,bar,Tomar algo en el bar.
+tienda,shop/store (f.),Una tienda pequeña.
+mercado,market,Comprar en el mercado.
+comprar,to buy,Voy a comprar pan.
+vender,to sell,Vender el coche.
+caro,expensive,Demasiado caro.
+barato,cheap,Muy barato.
+dinero,money,No tengo dinero.
+euro,euro,Diez euros.
+dólar,dollar,Cien dólares.
+precio,price,¿Cuál es el precio?
+coche,car,Un coche rojo.
+autobús,bus,Tomar el autobús.
+tren,train,Viajar en tren.
+avión,plane,Un avión grande.
+bicicleta,bicycle (f.),Montar en bicicleta.
+metro,subway/meter,Tomar el metro.
+taxi,taxi,Llamar un taxi.
+barco,boat,Un barco grande.
+estación,station (f.),La estación de tren.
+aeropuerto,airport,En el aeropuerto.
+viaje,trip/journey,Un viaje largo.
+viajar,to travel,Me gusta viajar.
+hotel,hotel,Un hotel barato.
+habitación,room (f.),Una habitación doble.
+playa,beach (f.),Ir a la playa.
+mar,sea,El mar está tranquilo.
+montaña,mountain (f.),Subir la montaña.
+río,river,Un río ancho.
+lago,lake,Un lago hermoso.
+bosque,forest,Caminar por el bosque.
+parque,park,El parque central.
+árbol,tree,Un árbol grande.
+flor,flower (f.),Una flor bonita.
+jardín,garden,El jardín de mi casa.
+animal,animal,Los animales salvajes.
+pájaro,bird,Un pájaro canta.
+caballo,horse,Montar a caballo.
+vaca,cow (f.),Una vaca en el campo.
+cerdo,pig,Un cerdo gordo.

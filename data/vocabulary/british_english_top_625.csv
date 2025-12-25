@@ -1,51 +1,614 @@
 word,translation,example_sentence
-the (en-gb),the,The cat sat on the mat.
-be (en-gb),to be,To be or not to be.
-to (en-gb),to,I went to the shop.
-of (en-gb),of,A cup of tea.
-and (en-gb),and,Fish and chips.
-a (en-gb),a,A big red bus.
-in (en-gb),in,He is in the garden.
-have (en-gb),to have,I have a dog.
-I (en-gb),I,I am from London.
-it (en-gb),it,It is cold today.
-for (en-gb),for,This letter is for you.
-not (en-gb),not,That is not my book.
-on (en-gb),on,The book is on the table.
-with (en-gb),with,I am with my friends.
-he (en-gb),he,He is a doctor.
-as (en-gb),as,As cold as ice.
-you (en-gb),you,How are you?
-do (en-gb),to do,What do you do?
-at (en-gb),at,I am at home.
-this (en-gb),this,This is my house.
-but (en-gb),but,"It is sunny, but cold."
-his (en-gb),his,That is his car.
-by (en-gb),by,The book was written by him.
-from (en-gb),from,I am from England.
-they (en-gb),they,They are playing football.
-we (en-gb),we,We are a family.
-say (en-gb),to say,What did you say?
-her (en-gb),her,That is her bag.
-she (en-gb),she,She is reading a book.
-or (en-gb),or,Tea or coffee?
-an (en-gb),an,An apple a day.
-will (en-gb),will (future),I will see you tomorrow.
-my (en-gb),my,This is my phone.
-one (en-gb),one,I have one brother.
-all (en-gb),all,All the cakes are gone.
-would (en-gb),would,Would you like some tea?
-there (en-gb),there,There is a cat on the roof.
-their (en-gb),their,That is their house.
-what (en-gb),what,What is your name?
-so (en-gb),so,"It was raining, so I took an umbrella."
-up (en-gb),up,Look up at the sky.
-out (en-gb),out,He went out.
-if (en-gb),if,"If it rains, we will stay home."
-about (en-gb),about,What is the book about?
-who (en-gb),who,Who is that?
-get (en-gb),to get,I need to get some milk.
-which (en-gb),which,Which one do you want?
-go (en-gb),to go,I want to go home.
-me (en-gb),me,Can you help me?
-when (en-gb),when,When is your birthday?
+the,the (definite article),The cat sleeps.
+be,to be,I am happy.
+to,to (infinitive marker),I want to eat.
+of,of (possession/origin),A cup of tea.
+and,and (conjunction),You and I.
+a,a/an (indefinite article),A big dog.
+in,in (preposition),I am in school.
+that,that (conjunction/pronoun),I know that you're right.
+have,to have,I have a car.
+I,I (pronoun),I speak English.
+it,it (pronoun),It is cold.
+for,for (preposition),A gift for you.
+not,not (negation),I do not know.
+on,on (preposition),The book is on the table.
+with,with (preposition),I go with my friend.
+he,he (pronoun),He is tall.
+as,as (conjunction),As you know.
+you,you (pronoun),You are nice.
+do,to do,I do my homework.
+at,at (preposition),At home.
+this,this (pronoun/adjective),This book is good.
+but,but (conjunction),I want to but I can't.
+his,his (possessive),His car is red.
+by,by (preposition),By the river.
+from,from (preposition),I am from America.
+they,they (pronoun),They are students.
+we,we (pronoun),We are friends.
+say,to say,I say yes.
+her,her (possessive/object),Her house is big.
+she,she (pronoun),She is beautiful.
+or,or (conjunction),Tea or coffee?
+an,an (indefinite article),An apple a day.
+will,will (future auxiliary),I will come tomorrow.
+my,my (possessive),My name is John.
+one,one (number/pronoun),One more time.
+all,all (determiner),All people are equal.
+would,would (conditional),I would like that.
+there,there (adverb),There it is!
+their,their (possessive),Their car is new.
+what,what (pronoun),What is that?
+so,so (adverb/conjunction),So beautiful!
+up,up (adverb/preposition),Stand up!
+out,out (adverb/preposition),Go out!
+if,if (conjunction),If it rains I'll stay.
+about,about (preposition),About ten minutes.
+who,who (pronoun),Who are you?
+get,to get,I get a letter.
+which,which (pronoun),Which one do you want?
+go,to go,I go to school.
+me,me (object pronoun),Tell me the truth.
+when,when (conjunction/adverb),When are you coming?
+make,to make,I make breakfast.
+can,can (modal verb),I can swim.
+like,like (preposition/verb),I like chocolate.
+time,time (noun),What time is it?
+no,no (determiner/adverb),No problem.
+just,just (adverb),Just one moment.
+him,him (object pronoun),I see him.
+know,to know,I know the answer.
+take,to take,Take the book.
+people,people (noun),Many people here.
+into,into (preposition),Go into the house.
+year,year (noun),One year ago.
+your,your (possessive),Your car is nice.
+good,good (adjective),A good friend.
+some,some (determiner),Some water please.
+could,could (modal verb),Could you help me?
+them,them (object pronoun),I like them.
+see,to see,I see a bird.
+other,other (determiner/pronoun),The other day.
+than,than (conjunction),Bigger than me.
+then,then (adverb),See you then!
+now,now (adverb),I'm leaving now.
+look,to look,Look at me!
+only,only (adverb/adjective),Only you.
+come,to come,Come here!
+its,its (possessive),Its color is red.
+over,over (preposition/adverb),Over there.
+think,to think,I think so.
+also,also (adverb),Me too.
+back,back (adverb/noun),Come back!
+after,after (preposition/conjunction),After dinner.
+use,to use,Use your brain.
+two,two (number),Two cats.
+how,how (adverb),How are you?
+our,our (possessive),Our house.
+work,work (noun/verb),I work here.
+first,first (adjective/adverb),First place.
+well,well (adverb),Very well done!
+way,way (noun),This way please.
+even,even (adverb/adjective),Even you!
+new,new (adjective),A new car.
+want,to want,I want to sleep.
+because,because (conjunction),Because I'm tired.
+any,any (determiner),Any questions?
+these,these (pronoun/determiner),These books are mine.
+give,to give,Give me that!
+day,day (noun),Have a nice day!
+most,most (determiner/adverb),Most people agree.
+us,us (object pronoun),Tell us the story.
+is,is (verb be),He is tall.
+was,was (verb be past),It was good.
+are,are (verb be),They are happy.
+been,been (verb be past participle),I have been there.
+has,has (verb have),She has a dog.
+had,had (verb have past),I had lunch.
+did,did (verb do past),I did it yesterday.
+does,does (verb do),She does yoga.
+said,said (verb say past),He said yes.
+made,made (verb make past),I made dinner.
+went,went (verb go past),I went home.
+came,came (verb come past),He came yesterday.
+got,got (verb get past),I got it!
+saw,saw (verb see past),I saw a movie.
+took,took (verb take past),She took my pen.
+knew,knew (verb know past),I knew that!
+thought,thought (verb think past),I thought so.
+found,found (verb find past),I found my keys.
+gave,gave (verb give past),She gave me a gift.
+told,told (verb tell past),He told me the truth.
+felt,felt (verb feel past),I felt happy.
+left,left (verb leave past),He left early.
+put,put (verb put past),I put it there.
+went,went (verb go past),We went shopping.
+three,three (number),Three days.
+state,state (noun),The state of affairs.
+never,never (adverb),Never say never.
+become,to become,I want to become a doctor.
+between,between (preposition),Between you and me.
+high,high (adjective),A high mountain.
+really,really (adverb),Really good!
+something,something (pronoun),I need something.
+most,most (adverb),The most beautiful.
+another,another (determiner),Another chance.
+much,much (determiner/adverb),Too much work.
+family,family (noun),My whole family.
+own,own (adjective/verb),My own house.
+leave,to leave,I have to leave.
+put,to put,Put it here.
+old,old (adjective),An old man.
+while,while (conjunction),While you wait.
+mean,to mean,What do you mean?
+keep,to keep,Keep it secret.
+student,student (noun),A good student.
+great,great (adjective),Great job!
+same,same (adjective/pronoun),The same thing.
+group,group (noun),A large group.
+woman,woman (noun),A young woman.
+where,where (adverb/conjunction),Where are you?
+world,world (noun),Around the world.
+going,going (verb go present participle),I'm going home.
+school,school (noun),I go to school.
+still,still (adverb),Still waiting.
+try,to try,Try your best!
+last,last (adjective/verb),Last time.
+ask,to ask,Ask a question.
+need,to need,I need help.
+too,too (adverb),Me too!
+feel,to feel,I feel good.
+three,three (number),Three times.
+system,system (noun),A good system.
+each,each (determiner),Each person.
+find,to find,Find the answer.
+tell,to tell,Tell me a story.
+call,to call,Call me later.
+try,to try,I'll try again.
+may,may (modal verb),May I come in?
+life,life (noun),Life is beautiful.
+turn,to turn,Turn left here.
+why,why (adverb),Why not?
+talk,to talk,We need to talk.
+hand,hand (noun),Wash your hands.
+place,place (noun),A nice place.
+number,number (noun),What's your number?
+part,part (noun),Part of the story.
+house,house (noun),My house is small.
+might,might (modal verb),It might rain.
+point,point (noun/verb),Good point!
+show,to show,Show me how.
+big,big (adjective),A big car.
+high,high (adjective),A high building.
+eye,eye (noun),Blue eyes.
+little,little (adjective),A little dog.
+ask,to ask,I have to ask.
+woman,woman (noun),A strong woman.
+seem,to seem,It seems good.
+provide,to provide,Provide information.
+hold,to hold,Hold my hand.
+run,to run,I run every day.
+small,small (adjective),A small house.
+against,against (preposition),Against the wall.
+early,early (adjective/adverb),Too early!
+move,to move,Move your car.
+follow,to follow,Follow me!
+during,during (preposition),During the summer.
+without,without (preposition),Without you.
+again,again (adverb),Try again!
+place,place (noun/verb),Put it in place.
+around,around (preposition/adverb),Look around.
+however,however (adverb),However it's true.
+home,home (noun/adverb),I'm going home.
+small,small (adjective),Small problems.
+found,found (verb find past),I found it!
+thought,thought (noun),A good thought.
+school,school (noun),Elementary school.
+mother,mother (noun),My mother cooks.
+area,area (noun),A large area.
+money,money (noun),I need money.
+story,story (noun),A true story.
+young,young (adjective),A young person.
+fact,fact (noun),That's a fact.
+month,month (noun),Last month.
+different,different (adjective),Very different.
+lot,lot (noun),A lot of work.
+right,right (adjective/noun/adverb),You're right!
+study,to study,I study English.
+book,book (noun),An interesting book.
+word,word (noun),A difficult word.
+issue,issue (noun),An important issue.
+side,side (noun),On the other side.
+kind,kind (noun/adjective),What kind?
+head,head (noun),My head hurts.
+far,far (adjective/adverb),Too far away.
+black,black (adjective),A black cat.
+long,long (adjective),A long road.
+both,both (determiner),Both of us.
+little,little (adjective/adverb),A little bit.
+room,room (noun),A big room.
+form,form (noun/verb),Fill out this form.
+white,white (adjective),A white shirt.
+since,since (preposition/conjunction),Since yesterday.
+against,against (preposition),Against the rules.
+important,important (adjective),Very important!
+until,until (preposition/conjunction),Until tomorrow.
+children,children (noun),Young children.
+side,side (noun),The left side.
+feet,feet (noun),My feet hurt.
+car,car (noun),A new car.
+mile,mile (noun),Five miles away.
+night,night (noun),Good night!
+walk,to walk,I walk to work.
+white,white (adjective),White snow.
+begin,to begin,Let's begin!
+paper,paper (noun),A sheet of paper.
+grow,to grow,Plants grow fast.
+open,to open,Open the door!
+carry,to carry,Carry this bag.
+took,took (verb take past),She took it.
+science,science (noun),I love science.
+eat,to eat,Let's eat!
+door,door (noun),Close the door!
+health,health (noun),Good health!
+art,art (noun),Modern art.
+sure,sure (adjective/adverb),I'm sure!
+war,war (noun),War is terrible.
+history,history (noun),American history.
+party,party (noun),Birthday party.
+within,within (preposition),Within reason.
+result,result (noun),The final result.
+change,change (noun/verb),Big changes.
+morning,morning (noun),Good morning!
+reason,reason (noun),Good reason.
+low,low (adjective),Low prices.
+win,to win,I want to win!
+research,research (noun/verb),Do research.
+girl,girl (noun),A young girl.
+guy,guy (noun),A nice guy.
+early,early (adjective/adverb),Early morning.
+food,food (noun),Delicious food.
+moment,moment (noun),Just a moment.
+himself,himself (pronoun),He did it himself.
+air,air (noun),Fresh air.
+teacher,teacher (noun),My teacher is great.
+force,force (noun/verb),Use force.
+offer,to offer,I offer help.
+enough,enough (determiner/adverb),That's enough!
+education,education (noun),Good education.
+across,across (preposition/adverb),Across the street.
+although,although (conjunction),Although it's late.
+remember,to remember,I remember you!
+foot,foot (noun),On foot.
+second,second (adjective/noun),Second chance.
+boy,boy (noun),A young boy.
+maybe,maybe (adverb),Maybe tomorrow.
+toward,toward (preposition),Toward the light.
+able,able (adjective),I'm able to help.
+age,age (noun),What age?
+policy,policy (noun),Company policy.
+everything,everything (pronoun),Everything is fine.
+love,love (noun/verb),I love you.
+process,process (noun),The process takes time.
+music,music (noun),I love music.
+including,including (preposition),Including tax.
+consider,to consider,Consider this.
+appear,to appear,It appears correct.
+actually,actually (adverb),Actually yes.
+buy,to buy,I need to buy milk.
+probably,probably (adverb),Probably not.
+human,human (adjective/noun),Human nature.
+wait,to wait,Please wait here.
+serve,to serve,Serve the food.
+market,market (noun),The local market.
+die,to die,All things must die.
+send,to send,Send me a message.
+expect,to expect,I expect good results.
+home,home (noun),Sweet home.
+sense,sense (noun/verb),That makes sense.
+build,to build,Build a house.
+stay,to stay,Stay here!
+fall,to fall,Don't fall!
+nation,nation (noun),A proud nation.
+plan,plan (noun/verb),Make a plan.
+cut,to cut,Cut the paper.
+college,college (noun),Go to college.
+interest,interest (noun),Show interest.
+death,death (noun),Life and death.
+course,course (noun),Of course!
+someone,someone (pronoun),Someone is here.
+experience,experience (noun),Good experience.
+behind,behind (preposition),Behind you!
+reach,to reach,Reach your goals.
+local,local (adjective),Local news.
+kill,to kill,Don't kill the spider.
+remain,to remain,Please remain seated.
+effect,effect (noun),Side effects.
+yeah,yeah (informal yes),Yeah sure!
+suggest,to suggest,I suggest waiting.
+class,class (noun),Math class.
+control,control (noun/verb),Under control.
+raise,to raise,Raise your hand!
+care,care (noun/verb),I don't care.
+perhaps,perhaps (adverb),Perhaps later.
+late,late (adjective/adverb),Running late!
+hard,hard (adjective/adverb),Work hard!
+field,field (noun),A green field.
+else,else (adverb),What else?
+pass,to pass,Pass the salt.
+former,former (adjective),My former boss.
+sell,to sell,Sell my car.
+major,major (adjective),Major problem.
+sometimes,sometimes (adverb),Sometimes I wonder.
+require,to require,This requires patience.
+along,along (preposition/adverb),Come along!
+development,development (noun),Urban development.
+themselves,themselves (pronoun),They did it themselves.
+report,report (noun/verb),File a report.
+role,role (noun),Important role.
+better,better (adjective/adverb),Better late than never.
+economic,economic (adjective),Economic growth.
+effort,effort (noun),Great effort!
+decide,to decide,You decide.
+rate,rate (noun),Interest rate.
+strong,strong (adjective),Very strong.
+possible,possible (adjective),Anything is possible!
+heart,heart (noun),My heart beats fast.
+drug,drug (noun),Prescription drugs.
+leader,leader (noun),Team leader.
+light,light (noun/adjective),Turn on the light.
+voice,voice (noun),A loud voice.
+wife,wife (noun),My wife is kind.
+whole,whole (adjective),The whole day.
+police,police (noun),Call the police!
+mind,mind (noun/verb),I don't mind.
+finally,finally (adverb),Finally arrived!
+pull,to pull,Pull the door.
+return,to return,I'll return soon.
+free,free (adjective),Free time.
+military,military (adjective/noun),Military service.
+price,price (noun),High prices.
+less,less (determiner/adverb),Less sugar please.
+according,according (preposition),According to him.
+decision,decision (noun),Good decision.
+explain,to explain,Explain it to me.
+son,son (noun),My son is ten.
+hope,hope (noun/verb),I hope so!
+develop,to develop,Develop skills.
+view,view (noun/verb),Nice view!
+relationship,relationship (noun),Good relationship.
+carry,to carry,Carry the bag.
+town,town (noun),Small town.
+road,road (noun),Long road ahead.
+drive,to drive,I drive to work.
+arm,arm (noun),Broken arm.
+true,true (adjective),That's true!
+federal,federal (adjective),Federal law.
+break,to break,Don't break it!
+difference,difference (noun),Big difference.
+thank,to thank,Thank you!
+receive,to receive,Receive a gift.
+value,value (noun/verb),Great value.
+international,international (adjective),International flight.
+building,building (noun),Tall building.
+action,action (noun),Take action!
+full,full (adjective),The glass is full.
+model,model (noun),Role model.
+join,to join,Join us!
+season,season (noun),My favorite season.
+society,society (noun),Modern society.
+tax,tax (noun),Pay taxes.
+director,director (noun),Movie director.
+position,position (noun),Good position.
+player,player (noun),Soccer player.
+agree,to agree,I agree with you.
+especially,especially (adverb),Especially today.
+record,record (noun/verb),World record.
+pick,to pick,Pick one!
+wear,to wear,Wear a coat.
+paper,paper (noun),Write it on paper.
+special,special (adjective),Very special day.
+space,space (noun),Outer space.
+ground,ground (noun),On the ground.
+form,form (noun/verb),Different forms.
+support,support (noun/verb),I support you.
+event,event (noun),Special event.
+official,official (adjective/noun),Official statement.
+whose,whose (pronoun),Whose is this?
+matter,matter (noun/verb),What's the matter?
+everyone,everyone (pronoun),Everyone is here.
+center,center (noun),City center.
+couple,couple (noun),A married couple.
+site,site (noun),Construction site.
+project,project (noun),School project.
+hit,to hit,Don't hit me!
+base,base (noun/verb),Home base.
+activity,activity (noun),Fun activity.
+star,star (noun),Bright stars.
+table,table (noun),Kitchen table.
+court,court (noun),Tennis court.
+produce,to produce,Produce results.
+eat,to eat,Time to eat!
+teach,to teach,I teach English.
+oil,oil (noun),Olive oil.
+half,half (noun/adjective),Half price.
+situation,situation (noun),Difficult situation.
+easy,easy (adjective),Very easy!
+cost,cost (noun/verb),How much does it cost?
+industry,industry (noun),Tech industry.
+figure,figure (noun/verb),I figure so.
+face,face (noun/verb),Face the truth.
+street,street (noun),Main street.
+image,image (noun),Clear image.
+itself,itself (pronoun),The problem itself.
+phone,phone (noun),Cell phone.
+either,either (determiner/adverb),Me either.
+data,data (noun),Important data.
+cover,cover (noun/verb),Cover your mouth.
+quite,quite (adverb),Quite good!
+picture,picture (noun),Take a picture.
+clear,clear (adjective/verb),Crystal clear.
+practice,practice (noun/verb),Practice makes perfect.
+piece,piece (noun),A piece of cake.
+land,land (noun/verb),Land the plane.
+recently,recently (adverb),Just recently.
+describe,to describe,Describe it to me.
+product,product (noun),New product.
+doctor,doctor (noun),See a doctor.
+wall,wall (noun),White walls.
+patient,patient (noun/adjective),Be patient!
+worker,worker (noun),Hard worker.
+news,news (noun),Good news!
+test,test (noun/verb),Take a test.
+movie,movie (noun),Watch a movie.
+certain,certain (adjective),I'm certain.
+north,north (noun/adjective),Up north.
+personal,personal (adjective),Personal business.
+simple,simple (adjective),Keep it simple.
+third,third (adjective/noun),Third place.
+technology,technology (noun),New technology.
+catch,to catch,Catch the ball!
+step,step (noun/verb),Step by step.
+baby,baby (noun),Cute baby.
+computer,computer (noun),New computer.
+type,type (noun/verb),What type?
+attention,attention (noun),Pay attention!
+draw,to draw,Draw a picture.
+film,film (noun),Foreign film.
+tree,tree (noun),Oak tree.
+source,source (noun),Reliable source.
+red,red (adjective),Red apple.
+nearly,nearly (adverb),Nearly finished.
+organization,organization (noun),Charity organization.
+choose,to choose,You choose.
+cause,cause (noun/verb),What's the cause?
+hair,hair (noun),Long hair.
+century,century (noun),Last century.
+evidence,evidence (noun),Clear evidence.
+window,window (noun),Open the window!
+difficult,difficult (adjective),Too difficult.
+listen,to listen,Listen carefully.
+soon,soon (adverb),See you soon!
+culture,culture (noun),Rich culture.
+billion,billion (number),Two billion people.
+chance,chance (noun),Last chance!
+brother,brother (noun),My older brother.
+energy,energy (noun),Solar energy.
+period,period (noun),Time period.
+summer,summer (noun),Hot summer.
+realize,to realize,I just realized!
+hundred,hundred (number),One hundred percent.
+available,available (adjective),Is it available?
+plant,plant (noun/verb),Green plants.
+likely,likely (adjective/adverb),Most likely.
+opportunity,opportunity (noun),Great opportunity!
+term,term (noun),Long term.
+short,short (adjective),Short hair.
+letter,letter (noun),Write a letter.
+condition,condition (noun),Good condition.
+choice,choice (noun),Tough choice.
+single,single (adjective),Single room.
+rule,rule (noun),Follow the rules.
+daughter,daughter (noun),My daughter.
+south,south (noun/adjective),Down south.
+husband,husband (noun),My husband.
+Congress,Congress (noun),U.S. Congress.
+floor,floor (noun),First floor.
+campaign,campaign (noun),Political campaign.
+material,material (noun),Building materials.
+population,population (noun),Growing population.
+economy,economy (noun),Strong economy.
+medical,medical (adjective),Medical care.
+hospital,hospital (noun),City hospital.
+church,church (noun),Old church.
+close,close (verb/adjective),Close the window!
+thousand,thousand (number),Two thousand.
+risk,risk (noun/verb),Take a risk.
+current,current (adjective),Current events.
+fire,fire (noun),Camp fire.
+future,future (noun/adjective),In the future.
+wrong,wrong (adjective/adverb),You're wrong.
+involve,to involve,Get involved!
+defense,defense (noun),Strong defense.
+anyone,anyone (pronoun),Anyone home?
+increase,increase (noun/verb),Prices increase.
+security,security (noun),Airport security.
+bank,bank (noun),Go to the bank.
+myself,myself (pronoun),I did it myself.
+certainly,certainly (adverb),Certainly not!
+west,west (noun/adjective),Out west.
+sport,sport (noun),Team sports.
+board,board (noun),Bulletin board.
+seek,to seek,Seek help.
+subject,subject (noun),Change the subject.
+officer,officer (noun),Police officer.
+private,private (adjective),Private property.
+rest,rest (noun/verb),Get some rest.
+behavior,behavior (noun),Good behavior.
+deal,deal (noun/verb),Great deal!
+performance,performance (noun),Live performance.
+fight,fight (noun/verb),Don't fight!
+throw,to throw,Throw the ball.
+top,top (noun/adjective),On top.
+quickly,quickly (adverb),Come quickly!
+past,past (noun/adjective/preposition),In the past.
+goal,goal (noun),Score a goal.
+bed,bed (noun),Go to bed!
+order,order (noun/verb),Place an order.
+author,author (noun),Famous author.
+fill,to fill,Fill the glass.
+represent,to represent,Represent your country.
+focus,focus (noun/verb),Stay focused!
+foreign,foreign (adjective),Foreign language.
+drop,to drop,Don't drop it!
+blood,blood (noun),Blood type.
+upon,upon (preposition),Once upon a time.
+agency,agency (noun),Travel agency.
+push,to push,Push the button.
+nature,nature (noun),Mother nature.
+color,color (noun),Favorite color.
+recently,recently (adverb),I recently moved.
+store,store (noun/verb),Grocery store.
+reduce,to reduce,Reduce costs.
+sound,sound (noun/verb),Strange sound.
+note,note (noun/verb),Take notes.
+fine,fine (adjective/adverb),I'm fine thanks!
+near,near (preposition/adjective/adverb),Very near.
+movement,movement (noun),Political movement.
+page,page (noun),Turn the page.
+enter,to enter,Enter the room.
+share,to share,Share with others.
+common,common (adjective),Common sense.
+poor,poor (adjective),Poor quality.
+natural,natural (adjective),Natural beauty.
+race,race (noun),Car race.
+concern,concern (noun/verb),Major concern.
+series,series (noun),TV series.
+significant,significant (adjective),Significant change.
+similar,similar (adjective),Very similar.
+hot,hot (adjective),Hot coffee.
+language,language (noun),Foreign language.
+usually,usually (adverb),I usually walk.
+response,response (noun),Quick response.
+dead,dead (adjective),Dead end.
+rise,to rise,Prices rise.
+animal,animal (noun),Wild animals.
+factor,factor (noun),Key factor.
+decade,decade (noun),Last decade.
+article,article (noun),News article.
+shoot,to shoot,Shoot the ball.
+east,east (noun/adjective),Far east.
+save,to save,Save money.
+seven,seven (number),Seven days.
+artist,artist (noun),Famous artist.
+scene,scene (noun),Crime scene.
+stock,stock (noun),Stock market.
+career,career (noun),Career goals.
+despite,despite (preposition),Despite the rain.
+central,central (adjective),Central location.
+eight,eight (number),Eight hours.
+thus,thus (adverb),Thus far.
+treatment,treatment (noun),Medical treatment.
+beyond,beyond (preposition),Beyond belief.
+happy,happy (adjective),Very happy!
+exactly,exactly (adverb),Exactly right!

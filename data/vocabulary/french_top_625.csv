@@ -1,80 +1,626 @@
 word,translation,example_sentence
-le (fr),the,Le chat dort.
-de (fr),of/from,Un verre de vin.
-un (fr),a/an,J'ai un livre.
-être (fr),to be,Je suis content.
-et (fr),and,Un chat et un chien.
-à (fr),to/at/in,Je vais à Paris.
-il (fr),he/it,Il est grand.
-avoir (fr),to have,J'ai une voiture.
-ne (fr),not (negation part 1),Je ne sais pas.
-je (fr),I,Je parle français.
-son (fr),his/her/its,C'est son livre.
-que (fr),that/which/what,Le livre que je lis.
-se (fr),oneself (reflexive),Il se lève.
-qui (fr),who/which,L'homme qui parle.
-ce (fr),this/that,Ce garçon est gentil.
-dans (fr),in/into/inside,Le chat est dans la boîte.
-en (fr),in/by/as,Je suis en France.
-du (fr),of the/from the (de + le),Le livre du professeur.
-elle (fr),she/it,Elle est intelligente.
-au (fr),to the/at the (à + le),Je vais au marché.
-de (fr),some/any (partitive),Je veux de l'eau.
-ce (fr),it/this/that is,C'est une table.
-le (fr),it/him (direct object),Je le vois.
-pas (fr),not (negation part 2),Je ne sais pas.
-pour (fr),for/to,Un cadeau pour toi.
-vous (fr),you (formal/plural),Vous êtes gentils.
-par (fr),by/through,Le livre est écrit par lui.
-sur (fr),on/upon,Le livre est sur la table.
-faire (fr),to do/to make,Je dois faire mes devoirs.
-plus (fr),more,Je veux plus de gâteau.
-dire (fr),to say/to tell,Il va dire la vérité.
-me (fr),me/to me,Il me parle.
-on (fr),one/we/people,On va au cinéma.
-mon (fr),my,C'est mon ami.
-lui (fr),him/to him/her,Je lui donne un livre.
-nous (fr),we/us,Nous aimons la France.
-comme (fr),like/as,Il est fort comme un lion.
-mais (fr),but,"Je suis fatigué, mais content."
-pouvoir (fr),to be able (can),Je peux le faire.
-avec (fr),with,Je sors avec des amis.
-tout (fr),all/everything,Il a tout mangé.
-y (fr),there,J'y vais.
-aller (fr),to go,Je vais à la plage.
-voir (fr),to see,Je vois un oiseau.
-bien (fr),well/good,C'est bien !
-où (fr),where,Où est la gare ?
-sans (fr),without,Café sans sucre.
-ma (fr),my (f.),C'est ma sœur.
-tu (fr),you (informal),Tu es mon ami.
-ou (fr),or,Thé ou café ?
-si (fr),if/so,"S'il pleut, je reste."
-savoir (fr),to know,Je sais la réponse.
-moi (fr),me (emphatic),"Moi, je suis d`accord."
-te (fr),you (object),Je te vois.
-homme (fr),man,C'est un homme grand.
-femme (fr),woman/wife,La femme lit un livre.
-temps (fr),time/weather,Je n'ai pas le temps.
-vouloir (fr),to want,Je veux un croissant.
-jour (fr),day,Bonne journée !
-votre (fr),your (formal),Voici votre clé.
-chose (fr),thing,C'est une petite chose.
-vie (fr),life,C'est la vie !
-autre (fr),other/another,Je veux un autre verre.
-grand (fr),big/tall/great,Un grand arbre.
-petit (fr),small/little,Un petit chat.
-encore (fr),again/still,Encore une fois.
-nouveau (fr),new,Un nouveau livre.
-trouver (fr),to find,Je ne peux pas le trouver.
-donner (fr),to give,Donne-moi le sel.
-même (fr),same/even,C'est la même chose.
-œil (fr),eye,Il a un œil bleu.
-passer (fr),to pass/spend,Je vais passer chez toi.
-prendre (fr),to take,Je prends le bus.
-monde (fr),world,Le monde est grand.
-main (fr),hand,Lave tes mains.
-tête (fr),head,J'ai mal à la tête.
-cœur (fr),heart,Mon cœur bat vite.
-maison (fr),house,Je rentre à la maison.
-eau (fr),water,"Un verre d'eau, s'il vous plaît."
+le,the (m.),Le chat dort.
+de,of/from,Un verre de vin.
+un,a/an (m.),J'ai un livre.
+être,to be,Je suis content.
+et,and,Un chat et un chien.
+à,to/at/in,Je vais à Paris.
+il,he/it,Il est grand.
+avoir,to have,J'ai une voiture.
+ne,not (negation),Je ne sais pas.
+je,I,Je parle français.
+son,his/her/its (m.),C'est son livre.
+que,that/which/what,Le livre que je lis.
+se,oneself (reflexive),Il se lève.
+qui,who/which,L'homme qui parle.
+ce,this/that,Ce garçon est gentil.
+dans,in/into,Le chat est dans la boîte.
+en,in/by/as,Je suis en France.
+du,of the (de+le),Le livre du professeur.
+elle,she/it,Elle est intelligente.
+au,to the (à+le),Je vais au marché.
+pour,for/to,Un cadeau pour toi.
+pas,not (negation),Je ne sais pas.
+vous,you (formal/plural),Vous êtes gentils.
+par,by/through,Le livre est écrit par lui.
+sur,on/upon,Le livre est sur la table.
+faire,to do/make,Je fais mes devoirs.
+plus,more/plus,Je veux plus de gâteau.
+dire,to say/tell,Il dit la vérité.
+me,me/to me,Il me parle.
+on,one/we/people,On va au cinéma.
+mon,my (m.),C'est mon ami.
+lui,him/her/to him/her,Je lui donne un livre.
+nous,we/us,Nous aimons la France.
+comme,like/as,Il est fort comme un lion.
+mais,but,Je suis fatigué mais content.
+pouvoir,can/to be able,Je peux le faire.
+avec,with,Je sors avec des amis.
+tout,all/everything,Il a tout mangé.
+y,there/it,J'y vais demain.
+aller,to go,Je vais à la plage.
+voir,to see,Je vois un oiseau.
+bien,well/good,C'est bien fait!
+où,where,Où est la gare?
+sans,without,Café sans sucre.
+ma,my (f.),C'est ma sœur.
+tu,you (informal),Tu es mon ami.
+ou,or,Thé ou café?
+si,if/so/yes (after neg.),S'il pleut je reste.
+savoir,to know (fact),Je sais la réponse.
+moi,me (emphatic),Moi je suis d'accord.
+te,you (object),Je te vois.
+homme,man,C'est un homme grand.
+femme,woman/wife,La femme lit un livre.
+temps,time/weather,Je n'ai pas le temps.
+vouloir,to want,Je veux un croissant.
+jour,day,Bonne journée!
+votre,your (formal),Voici votre clé.
+chose,thing,C'est une petite chose.
+vie,life,C'est la vie!
+autre,other/another,Je veux un autre verre.
+grand,big/tall/great,Un grand arbre.
+petit,small/little,Un petit chat.
+encore,again/still,Encore une fois.
+nouveau,new,Un nouveau livre.
+trouver,to find,Je ne peux pas le trouver.
+donner,to give,Donne-moi le sel.
+même,same/even,C'est la même chose.
+œil,eye,Il a un œil bleu.
+passer,to pass/spend,Je vais passer chez toi.
+prendre,to take,Je prends le bus.
+monde,world,Le monde est grand.
+main,hand,Lave tes mains.
+tête,head,J'ai mal à la tête.
+cœur,heart,Mon cœur bat vite.
+maison,house,Je rentre à la maison.
+eau,water,Un verre d'eau s'il vous plaît.
+tenir,to hold,Je tiens ton manteau.
+venir,to come,Il vient demain.
+deux,two,J'ai deux chats.
+cette,this/that (f.),Cette fille est gentille.
+rendre,to return/make,Je dois rendre le livre.
+mettre,to put/place,Je mets le livre ici.
+celui,this one/that one (m.),Celui-ci est mieux.
+voici,here is,Voici mon adresse.
+très,very,C'est très bon.
+tenir,to hold,Je tiens ton manteau.
+leur,their/to them,C'est leur maison.
+tout,every/all (adj.),Tous les jours.
+peu,little/few,Un peu de pain.
+ville,city/town,J'habite en ville.
+moins,less/minus,J'ai moins de temps.
+quel,which/what,Quel âge as-tu?
+père,father,Mon père travaille.
+voilà,there is/are,Voilà le problème.
+quand,when,Quand pars-tu?
+point,point/dot,C'est le point important.
+après,after,Après le dîner.
+avant,before,Avant midi.
+beau,beautiful/handsome,Un beau paysage.
+jeune,young,Une jeune fille.
+aussi,also/too,Moi aussi.
+parler,to speak,Je parle français.
+an,year,J'ai vingt ans.
+depuis,since/for,J'habite ici depuis deux ans.
+là,there,Il est là-bas.
+sentir,to feel/smell,Je sens une odeur.
+entre,between,Entre nous.
+sous,under,Sous la table.
+croire,to believe,Je crois que oui.
+devoir,must/to have to,Je dois partir.
+tant,so much/many,Tant de choses!
+quelque,some,Quelques amis.
+bon,good,Un bon repas.
+demander,to ask,Je te demande pardon.
+devenir,to become,Il devient médecin.
+mot,word,Un joli mot.
+bon,well (adv.),Bon d'accord.
+porter,to carry/wear,Elle porte une robe.
+trois,three,Trois enfants.
+aimer,to like/love,J'aime le chocolat.
+arriver,to arrive/happen,J'arrive bientôt.
+sortir,to go out/exit,Je sors ce soir.
+suivre,to follow,Suis-moi!
+ainsi,thus/so,Ainsi soit-il.
+nom,name,Quel est ton nom?
+mère,mother,Ma mère cuisine.
+toujours,always/still,Je suis toujours là.
+français,French,Je parle français.
+fin,end,C'est la fin.
+fils,son,Mon fils a dix ans.
+droit,right/straight,Tout droit.
+travail,work,J'aime mon travail.
+enfant,child,Les enfants jouent.
+retrouver,to find again,Je ne peux pas retrouver mes clés.
+ami,friend,C'est mon meilleur ami.
+côté,side,De ce côté.
+entendre,to hear,J'entends du bruit.
+place,place/square,Une place libre.
+heure,hour/time,Quelle heure est-il?
+laisser,to leave/let,Laisse-moi partir.
+cas,case,Dans ce cas.
+comprendre,to understand,Je comprends maintenant.
+connaître,to know (person/place),Je connais Marie.
+jamais,never/ever,Je ne fume jamais.
+pays,country,Quel beau pays!
+tant,as much/so much,Tant mieux!
+alors,so/then,Alors on y va?
+année,year,L'année prochaine.
+leur,their (adj.),Leur maison est grande.
+seulement,only,Seulement trois euros.
+déjà,already,J'ai déjà mangé.
+quatre,four,Quatre saisons.
+corps,body,J'ai mal au corps.
+monsieur,mister/sir,Bonjour monsieur.
+souvent,often,Je viens souvent ici.
+rester,to stay/remain,Je reste à la maison.
+vraiment,really,C'est vraiment bon!
+toute,all/every (f.),Toute la journée.
+regarder,to look at/watch,Je regarde la télé.
+raison,reason/right,Tu as raison.
+madame,madam/mrs,Bonjour madame.
+maintenant,now,Je pars maintenant.
+appeler,to call,Appelle-moi ce soir.
+soir,evening,À ce soir!
+fois,time/occasion,Une fois par semaine.
+quelqu'un,someone,Quelqu'un est là?
+jamais,never,Ne dis jamais ça.
+politique,politics/political,La politique française.
+personne,person/nobody,Une personne gentille.
+loin,far,C'est trop loin.
+reprendre,to take back,Je reprends du café.
+cinq,five,Cinq minutes.
+âge,age,Quel âge as-tu?
+autour,around,Autour de la maison.
+esprit,mind/spirit,L'esprit critique.
+chez,at/to (someone's place),Je vais chez Marie.
+fois,times (multiplication),Deux fois trois.
+tant,so many/much,Tant de gens!
+haut,high/top,En haut de la tour.
+question,question,Une bonne question.
+hier,yesterday,J'ai vu hier.
+attendre,to wait,J'attends le bus.
+force,strength/force,La force du vent.
+pensée,thought,Une belle pensée.
+pendant,during/for,Pendant l'été.
+tomber,to fall,Attention tu vas tomber!
+paraître,to appear/seem,Il paraît jeune.
+contre,against,Contre le mur.
+espérer,to hope,J'espère que oui.
+cependant,however,Cependant c'est vrai.
+parti,party/departed,Le parti politique.
+continuer,to continue,Continue comme ça!
+rire,to laugh,Il me fait rire.
+ciel,sky/heaven,Le ciel est bleu.
+écrire,to write,J'écris une lettre.
+cause,cause/reason,À cause de toi.
+près,near/close,Tout près d'ici.
+fois,time (instance),Cette fois-ci.
+besoin,need,J'ai besoin d'aide.
+merci,thank you,Merci beaucoup!
+pied,foot,J'ai mal au pied.
+tirer,to pull/shoot,Tire la porte.
+livre,book,Je lis un livre.
+matin,morning,Demain matin.
+porte,door,Ferme la porte.
+mouvement,movement/motion,Un mouvement brusque.
+penser,to think,Je pense que oui.
+tard,late,Il est trop tard.
+service,service,À votre service.
+toi,you (emphatic),C'est pour toi.
+route,road,Sur la route.
+ordre,order,Dans l'ordre.
+blanc,white,Une chemise blanche.
+selon,according to,Selon lui.
+voix,voice,Une belle voix.
+seul,alone/only,Je suis seul.
+premier,first,Le premier jour.
+moment,moment,Un instant.
+jeu,game/play,Un jeu vidéo.
+groupe,group,Un groupe d'amis.
+bas,low/bottom,En bas.
+ministre,minister,Le premier ministre.
+air,air/look,L'air frais.
+suite,continuation/suite,La suite au prochain épisode.
+ensemble,together,Tous ensemble.
+rien,nothing,Il n'y a rien.
+tel,such,Un tel homme.
+genre,kind/type/gender,Quel genre de film?
+six,six,Six heures.
+non,no,Non merci.
+sens,sense/direction,Le bon sens.
+ouvrir,to open,Ouvre la fenêtre!
+action,action,Un film d'action.
+forme,form/shape,En pleine forme.
+semble,seems,Il semble fatigué.
+pourquoi,why,Pourquoi pas?
+chaque,each/every,Chaque jour.
+noir,black,Un chat noir.
+marcher,to walk/work (function),Je marche vite.
+rêve,dream,Un beau rêve.
+mort,death/dead,La vie et la mort.
+bras,arm,Lève le bras.
+somme,sum/total,En somme.
+sais,know (from savoir),Je ne sais pas.
+frère,brother,Mon petit frère.
+état,state/condition,L'état des lieux.
+certain,certain/sure,J'en suis certain.
+bout,end/bit,Au bout de la rue.
+aucun,no/none/any,Aucun problème.
+ligne,line,Une ligne droite.
+histoire,story/history,Une belle histoire.
+guerre,war,La guerre est finie.
+long,long,Un long voyage.
+près,nearly/almost,Près de cent ans.
+train,train,Je prends le train.
+mener,to lead,Cela mène à Paris.
+beau,handsome/beautiful,Un beau garçon.
+face,face,Face à face.
+besoin,need,J'ai besoin de toi.
+fort,strong/loud/very,Il est très fort.
+propre,own/clean,Ma propre maison.
+salle,room/hall,Une salle de bain.
+général,general,En général.
+manquer,to miss/lack,Tu me manques.
+vu,seen,J'ai vu le film.
+maître,master/teacher,Le maître d'école.
+simple,simple/plain,C'est simple!
+figure,face/figure,Une figure connue.
+fille,girl/daughter,Ma petite fille.
+présent,present,Le présent simple.
+entrer,to enter,Entre donc!
+mois,month,Le mois prochain.
+voiture,car,J'ai une voiture rouge.
+souvenir,memory/souvenir,Un beau souvenir.
+garder,to keep/guard,Garde le secret.
+œuvre,work (art),Une œuvre d'art.
+peur,fear,J'ai peur du noir.
+second,second,Le second étage.
+coin,corner,Au coin de la rue.
+jeter,to throw,Ne jette pas ça!
+nature,nature,La nature est belle.
+rapport,report/relationship,Un rapport médical.
+ville,city/town,Une grande ville.
+parole,word/speech,Une parole d'honneur.
+vieux,old,Un vieil homme.
+vrai,true/real,C'est vrai!
+madame,Mrs./madam,Madame Dupont.
+chambre,bedroom/room,Ma chambre est petite.
+avis,opinion/notice,À mon avis.
+reste,rest/remainder,Le reste du temps.
+jouer,to play,Les enfants jouent.
+pourtant,however/yet,Pourtant c'est vrai.
+million,million,Deux millions d'euros.
+plan,plan/map,Quel est ton plan?
+compter,to count/intend,Je compte sur toi.
+vue,view/sight,Une belle vue.
+fois,times,Plusieurs fois.
+chef,chief/chef/boss,Le chef cuisinier.
+bas,low/bottom,Un prix bas.
+âme,soul,Une belle âme.
+pauvre,poor,Les pauvres gens.
+demi,half,Une demi-heure.
+battre,to beat/fight,Mon cœur bat vite.
+façon,way/manner,De cette façon.
+arrêter,to stop,Arrête de crier!
+noter,to note/notice,Note bien ceci.
+monter,to go up/climb,Monte les escaliers.
+partir,to leave/depart,Je dois partir maintenant.
+mal,badly/pain,J'ai mal à la tête.
+sûr,sure/certain,J'en suis sûr.
+effet,effect/indeed,En effet.
+suffire,to be enough,Ça suffit!
+projet,project/plan,Un nouveau projet.
+roi,king,Le roi Louis XIV.
+type,type/guy,Quel type de voiture?
+idée,idea,Bonne idée!
+résultat,result,Le résultat final.
+expérience,experience/experiment,Une expérience enrichissante.
+étude,study,Mes études.
+sauver,to save/rescue,Sauve-moi!
+rôle,role,Un rôle important.
+intérêt,interest,C'est dans ton intérêt.
+assurer,to assure/insure,Je t'assure que oui.
+table,table,La table est mise.
+courir,to run,Je cours vite.
+école,school,Je vais à l'école.
+poser,to put/pose/ask,Je pose une question.
+remettre,to put back/postpone,Je remets ça à demain.
+amour,love,L'amour de ma vie.
+hors,outside/except,Hors de question!
+porte,door/gate,Ouvre la porte!
+envie,desire/envy,J'ai envie de dormir.
+froid,cold,Il fait froid.
+œil,eye,Les yeux bleus.
+moyen,means/average/medium,Un moyen de transport.
+perte,loss,Une perte de temps.
+dix,ten,Dix euros.
+fait,fact/made,C'est un fait.
+peuple,people/nation,Le peuple français.
+silence,silence,Le silence règne.
+souffrir,to suffer,Je souffre du dos.
+perdre,to lose,Je perds mes clés.
+tourner,to turn,Tourne à gauche.
+répondre,to answer,Réponds-moi!
+commencer,to begin/start,Ça commence bien!
+humain,human,L'être humain.
+envoi,sending/shipment,L'envoi est gratuit.
+plein,full,C'est plein.
+terre,earth/ground,La terre tourne.
+valoir,to be worth,Ça vaut le coup.
+plaire,to please,S'il te plaît.
+bout,end/piece,Un bout de pain.
+cours,course/class,Un cours de français.
+dernier,last,La dernière fois.
+bois,wood/woods,Une table en bois.
+avenir,future,Dans l'avenir.
+lettre,letter,J'écris une lettre.
+cent,hundred,Cent euros.
+parent,parent/relative,Mes parents.
+parmi,among,Parmi nous.
+fond,bottom/background,Au fond de la classe.
+soleil,sun,Le soleil brille.
+étrange,strange,C'est étrange!
+surtout,especially/above all,Surtout toi!
+regard,look/gaze,Un regard triste.
+jardin,garden,Un beau jardin.
+milieu,middle/environment,Au milieu de la rue.
+bureau,office/desk,Je suis au bureau.
+mieux,better,C'est mieux ainsi.
+rappeler,to remind/call back,Rappelle-moi demain.
+geste,gesture/movement,Un geste généreux.
+doute,doubt,Sans aucun doute.
+soin,care,Prends soin de toi.
+mademoiselle,miss (title),Bonjour mademoiselle.
+papier,paper,Une feuille de papier.
+mariage,marriage/wedding,Un mariage heureux.
+changer,to change,Je change d'avis.
+joie,joy,Une grande joie.
+village,village,Un petit village.
+toucher,to touch,Ne touche pas!
+reconnaître,to recognize,Je te reconnais!
+charge,load/charge,À ma charge.
+vite,quickly/fast,Viens vite!
+retour,return,Le retour à la maison.
+obliger,to force/oblige,Je suis obligé d'y aller.
+présenter,to present/introduce,Je te présente Marie.
+fort,strongly/very,Parle plus fort!
+pièce,room/piece/coin,Une pièce de monnaie.
+honneur,honor,Parole d'honneur!
+essayer,to try,J'essaie de comprendre.
+dieu,god,Mon Dieu!
+offrir,to offer/give,Je t'offre un café.
+art,art,L'art moderne.
+rue,street,Dans la rue.
+centre,center,Au centre-ville.
+prêt,ready/loan,Je suis prêt!
+sept,seven,Sept jours.
+tuer,to kill,Ne tue pas!
+bord,edge/side,Au bord de la mer.
+signe,sign,Un bon signe.
+intérieur,interior/inside,À l'intérieur.
+établir,to establish,Établir un plan.
+gagner,to win/earn,Je veux gagner!
+sang,blood,Le sang coule.
+éprouver,to feel/test,J'éprouve de la joie.
+vendre,to sell,Je vends ma voiture.
+condition,condition,À condition que.
+prison,prison/jail,En prison.
+juge,judge,Le juge décide.
+produire,to produce,Produire un film.
+retenir,to hold back/remember,Retiens bien ceci.
+valeur,value/worth,Quelle valeur!
+huit,eight,Huit heures.
+frapper,to hit/knock,Frappe à la porte.
+particulier,particular/private,En particulier.
+sérieux,serious,C'est sérieux?
+courant,current/common,Le courant électrique.
+glisser,to slip/slide,Attention tu vas glisser!
+avouer,to admit/confess,J'avoue que oui.
+classe,class/classroom,En classe de français.
+succès,success,Un grand succès.
+lendemain,next day,Le lendemain matin.
+créer,to create,Créer quelque chose.
+difficile,difficult/hard,C'est difficile!
+autant,as much/many,Autant que possible.
+étranger,foreign/stranger,Un pays étranger.
+payer,to pay,Je paie l'addition.
+champ,field,Un champ de blé.
+pain,bread,Du pain frais.
+accepter,to accept,J'accepte l'offre.
+oublier,to forget,N'oublie pas!
+mur,wall,Le mur est blanc.
+détail,detail,En détail.
+bientôt,soon,À bientôt!
+ajouter,to add,Ajoute du sel.
+tenter,to try/attempt/tempt,Je tente ma chance.
+lumière,light,La lumière du jour.
+impossible,impossible,C'est impossible!
+différent,different,C'est différent.
+étendre,to spread/extend,Étendre le linge.
+souffrir,to suffer/bear,Je ne peux pas le souffrir.
+soldat,soldier,Un soldat courageux.
+prévoir,to foresee/plan,Je ne peux pas le prévoir.
+chemin,way/path/road,Le chemin de la liberté.
+nuit,night,Bonne nuit!
+lieu,place/venue,Un lieu magique.
+reprendre,to resume/take back,Je reprends mon souffle.
+cheval,horse,Un beau cheval.
+profond,deep/profound,L'océan est profond.
+quartier,neighborhood/district,Un quartier populaire.
+mission,mission/task,Une mission importante.
+trou,hole,Un trou dans le mur.
+nommer,to name/appoint,On l'a nommé directeur.
+douleur,pain/sorrow,Une grande douleur.
+réunir,to gather/unite,Réunir des amis.
+doux,soft/sweet/gentle,Une voix douce.
+sentier,path,Un petit sentier.
+inquiéter,to worry,Ne t'inquiète pas!
+embrasser,to kiss/embrace,Embrasse-moi!
+feu,fire,Attention au feu!
+aider,to help,Aide-moi s'il te plaît!
+éclater,to burst/break out,Éclater de rire.
+pleurer,to cry/weep,Elle pleure de joie.
+âme,soul/spirit,Une âme pure.
+armée,army,Rejoindre l'armée.
+imaginer,to imagine,Imagine un peu!
+abandonner,to abandon/give up,N'abandonne jamais!
+considérer,to consider,Je considère que oui.
+neuf,nine/new,Neuf mois.
+boire,to drink,Je bois du café.
+diriger,to direct/manage,Diriger une entreprise.
+représenter,to represent,Représenter son pays.
+souffle,breath/wind,À bout de souffle.
+faveur,favor,En ma faveur.
+surprendre,to surprise,Tu me surprends!
+convenir,to suit/agree,Ça me convient.
+goût,taste,Un bon goût.
+heure,hour/o'clock,Quelle heure est-il?
+poche,pocket,Dans ma poche.
+préférer,to prefer,Je préfère le thé.
+adresser,to address/direct,Adresse-toi à lui.
+épaule,shoulder,Sur mon épaule.
+placer,to place/invest,Placer de l'argent.
+salle,room/hall,Une salle d'attente.
+monter,to rise/go up,Le prix monte.
+vin,wine,Un verre de vin.
+race,race/breed,La race humaine.
+forcer,to force,Ne me force pas!
+étonner,to astonish,Ça m'étonne!
+obliger,to oblige/compel,Tu m'obliges à partir.
+raconter,to tell/relate,Raconte-moi!
+riche,rich/wealthy,Un homme riche.
+rencontrer,to meet,Enchanté de te rencontrer!
+mériter,to deserve/merit,Tu le mérites!
+craindre,to fear,Je ne crains rien.
+rêver,to dream,Je rêve d'un monde meilleur.
+désirer,to desire/wish,Je désire vous parler.
+importance,importance,C'est d'une grande importance.
+rouge,red,Une pomme rouge.
+abord,approach/manner,D'abord je mange.
+intention,intention,Quelle est ton intention?
+rang,rank/row,Au premier rang.
+animal,animal,Les animaux sauvages.
+occasion,opportunity/occasion,Une belle occasion.
+affirmer,to assert/affirm,J'affirme que oui.
+bataille,battle,Une bataille difficile.
+bataille,battle/fight,Mener une bataille.
+marque,brand/mark,Une grande marque.
+retirer,to withdraw/remove,Retire tes chaussures.
+marquer,to mark/score,Marquer un but.
+montagne,mountain,Les montagnes sont hautes.
+campagne,countryside/campaign,À la campagne.
+permettre,to allow/permit,Permets-moi d'entrer.
+gouvernement,government,Le gouvernement français.
+accorder,to grant/tune,Accorde-moi une faveur.
+étage,floor/story,Au troisième étage.
+propre,clean/own,Ma propre voiture.
+capable,capable/able,Je suis capable de le faire.
+causer,to cause/chat,Causer des problèmes.
+réaliser,to achieve/realize,Réaliser un rêve.
+vivre,to live,Vivre sa vie.
+propos,purpose/remark,À propos de quoi?
+traiter,to treat/deal with,Traiter un sujet.
+songer,to think/dream,Je songe à partir.
+opinion,opinion,Mon opinion personnelle.
+désigner,to designate/point,Désigner un responsable.
+coucher,to lie down/set (sun),Je vais me coucher.
+compter,to count/plan,Je compte partir.
+demeurer,to remain/live,Il demeure à Paris.
+entraîner,to drag/train,Entraîner une équipe.
+vertu,virtue,Par la vertu de.
+apercevoir,to notice/perceive,J'aperçois une lumière.
+hésiter,to hesitate,N'hésite pas!
+demeure,residence,Une belle demeure.
+content,happy/glad,Je suis content.
+observer,to observe/watch,Observer le ciel.
+juste,just/right/fair,C'est juste!
+beau,fine/beautiful,Il fait beau.
+éprouver,to feel/experience,Éprouver du plaisir.
+ton,tone/your,Sur un ton calme.
+espoir,hope,Avoir de l'espoir.
+mal,evil/harm,Le bien et le mal.
+défendre,to defend/forbid,Défendre ses idées.
+mauvais,bad,Un mauvais film.
+rompre,to break,Rompre le silence.
+emporter,to take away,Emporter des souvenirs.
+défendre,to defend/protect,Défendre un ami.
+avis,opinion/advice,À mon avis.
+tendre,to stretch/tender,Tendre la main.
+exprimer,to express,Exprimer ses sentiments.
+effort,effort,Faire un effort.
+étudier,to study,Étudier le français.
+occuper,to occupy/keep busy,Occuper une place.
+espèce,species/kind,Une espèce rare.
+établir,to establish/set up,Établir un plan.
+émotion,emotion,Une forte émotion.
+assister,to attend/assist,Assister à un concert.
+remplacer,to replace,Remplacer quelqu'un.
+proposer,to propose/suggest,Je propose une solution.
+saisir,to seize/grasp,Saisir l'occasion.
+approcher,to approach/come near,Approcher de la vérité.
+malade,sick/ill,Je suis malade.
+composer,to compose/dial,Composer un numéro.
+appartenir,to belong,Ça m'appartient.
+chasser,to hunt/chase away,Chasser les mouches.
+inspirer,to inspire/breathe in,Tu m'inspires!
+grave,serious/grave,C'est grave?
+réveiller,to wake up,Réveille-toi!
+sauver,to save/rescue,Sauver la situation.
+enfermer,to lock up,Enfermer à clé.
+vérité,truth,La pure vérité.
+tâche,task/spot,Une tâche difficile.
+danger,danger,Attention danger!
+charger,to load/charge,Charger la voiture.
+faux,false/fake,Un faux document.
+renverser,to knock over,Renverser un verre.
+éducation,education/upbringing,Une bonne éducation.
+limite,limit/boundary,La limite de vitesse.
+sourire,to smile/smile,Elle me sourit.
+chaud,hot/warm,Il fait chaud.
+puissance,power/strength,Une grande puissance.
+théâtre,theater,Aller au théâtre.
+prudent,careful/prudent,Sois prudent!
+acheter,to buy,Acheter du pain.
+commerce,trade/business,Le commerce international.
+lourd,heavy,C'est trop lourd!
+compagnie,company,En bonne compagnie.
+langue,language/tongue,La langue française.
+docteur,doctor,Voir le docteur.
+agir,to act,Il faut agir vite!
+fortune,fortune/wealth,Faire fortune.
+tranquille,quiet/calm,Reste tranquille!
+intelligence,intelligence,Une grande intelligence.
+traverser,to cross,Traverser la rue.
+suffire,to suffice/be enough,Cela suffit!
+protéger,to protect,Protéger l'environnement.
+lutte,struggle/fight,La lutte continue.
+distance,distance,À distance.
+poitrine,chest/breast,Mal à la poitrine.
+souffrance,suffering,Une grande souffrance.
+justice,justice,Rendre justice.
+salut,hi/salvation,Salut les amis!
+unique,unique/only,C'est unique!
+calme,calm/quiet,Du calme!
+mener,to lead/conduct,Mener une vie simple.
+faute,fault/mistake,C'est ma faute.
+léger,light/slight,Un repas léger.
+colère,anger,En colère.
+trembler,to tremble/shake,Je tremble de froid.
+rayon,ray/shelf/radius,Un rayon de soleil.
+hasard,chance/luck,Par hasard.
+oreille,ear,J'ai mal à l'oreille.
+foule,crowd,Une foule immense.
+presser,to press/hurry,Presse-toi!
+mer,sea,La mer est calme.
+foi,faith,Avoir la foi.
+habitude,habit/custom,Une mauvaise habitude.
+auprès,near/with,Auprès de toi.
+naissance,birth,Date de naissance.
+paix,peace,La paix mondiale.
+doucement,gently/slowly,Parle doucement!
+heureux,happy,Je suis heureux.
+brûler,to burn,Ça brûle!
+complet,complete/full,Un repas complet.
+plaisir,pleasure,Avec plaisir!
