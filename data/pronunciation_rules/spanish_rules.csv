@@ -1,0 +1,17 @@
+rule,explanation,example_word,example_ipa,image_query
+Pure Vowels,"Spanish has 5 pure vowels (a, e, i, o, u) that do not change sound. 'A' is always 'ah', 'E' is 'eh', 'I' is 'ee', 'O' is 'oh', 'U' is 'oo'.",murciélago,[muɾ.ˈθje.la.ɣo],bat (animal)
+Diphthongs & Triphthongs,"When weak vowels (i, u) combine with strong vowels (a, e, o), they form a single syllable (diphthong), like 'ai' in 'baile' or 'ue' in 'fuego'.",fuego,[ˈfwe.ɣo],fire
+C & G (Hard vs. Soft),"'C' is hard [k] before a, o, u ('casa') but soft [s] or [θ] before e, i ('cena'). 'G' is hard [g] before a, o, u ('gato') but a soft, throaty [x] before e, i ('gente').",gato vs gente,[ˈɡa.to] vs [ˈxen.te],cat and people
+B & V,"In most Spanish dialects, 'B' and 'V' are pronounced identically. At the start of a phrase they are a hard [b]. Between vowels, they are a soft, breathy [β].",beber,[be.ˈβeɾ],drinking glass
+D (Hard vs. Soft),"Like 'B' and 'V', 'D' is hard [d] at the start of a phrase, but becomes a soft 'th' [ð] sound (like in 'this') between vowels.",dedo,[ˈde.ðo],finger
+The Letter H,The letter 'H' is always silent in Spanish. Do not pronounce it.,hola,[ˈo.la],hello speech bubble
+CH (es),"Pronounced [tʃ], exactly like the 'ch' in the English word 'church'.",leche,[ˈle.tʃe],milk carton
+LL & Y (Yeísmo),"In the vast majority of dialects, 'LL' and 'Y' are pronounced identically as a 'y' sound [ʝ], like in 'yes'.",llave,[ˈʝa.βe],key
+"J & G (+e,i)","The Spanish 'J' and the 'G' before 'e' or 'i' are pronounced with a throaty, voiceless fricative [x], like the 'ch' in Scottish 'loch'.",caja,[ˈka.xa],box
+Ñ,"Pronounced [ɲ], like the 'ny' in the English word 'canyon'.",piña,[ˈpi.ɲa],pineapple
+R (Tap vs. Trill),A single 'r' between vowels is a quick tap [ɾ] (like the 'tt' in American 'butter'). 'rr' or 'r' at the start of a word is a full trill [r].,perro,[ˈpe.ro],dog
+QU,The combination 'qu' is always pronounced like 'k' [k]. The 'u' is silent.,queso,[ˈke.so],cheese
+"Z & C (+e,i)","In Latin America, 'z' and 'c' (before e/i) are pronounced like 's' [s] (Seseo). In most of Spain, they are pronounced like 'th' [θ] (Ceceo).",zapato,[sa.ˈpa.to],shoe
+"Stress: Ends in Vowel, N, S","If a word ends in a vowel, 'n', or 's', the stress naturally falls on the second-to-last syllable.",manzana,[man.ˈθa.na],apple
+Stress: Ends in Consonant,"If a word ends in any consonant other than 'n' or 's', the stress naturally falls on the last syllable.",ciudad,[θju.ˈðað],city skyline
+Stress: The Accent Mark,An accent mark (tilde) on a vowel tells you to break the normal stress rules and stress that specific syllable.,teléfono,[te.ˈle.fo.no],telephone

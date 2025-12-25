@@ -1,0 +1,14 @@
+rule,explanation,example_word,example_ipa,image_query
+Vowel Reduction (Unstressed),"This is a key rule. In unstressed syllables, 'о' sounds like 'а' [a], and 'е' and 'я' sound like 'и' [i].",молоко,[məɫɐˈko],milk
+The 5 Sung Vowels,"The 5 main vowel sounds in stressed syllables are [a], [e], [i], [o], [u]. They are generally 'pure' without gliding.",мама,[ˈmamə],mother
+Ы (The Hard i),A unique vowel with no English equivalent. It's made by pulling the tongue back from an 'ee' [i] position. It sounds like the 'i' in 'ill' but much further back in the throat.,сыр,[sɨr],cheese
+"Soft Vowels (я, е, ё, ю, и)","These vowels indicate that the preceding consonant is 'soft' (palatalized). 'я' is 'ya' [ja], 'е' is 'ye' [je], 'ё' is 'yo' [jo], 'ю' is 'yu' [ju].",ёлка,[ˈjɵlkə],christmas tree
+Hard vs. Soft Consonants,Most consonants come in pairs: hard (non-palatalized) and soft (palatalized). Softening is marked by a following 'soft' vowel or the soft sign 'ь'.,брат vs брать,[brat] vs [bratʲ],brother
+Final Consonant Devoicing (ru),"Voiced consonants at the end of a word become voiceless. 'б' sounds like 'п', 'д' sounds like 'т', 'г' sounds like 'к', 'в' sounds like 'ф', 'з' sounds like 'с', 'ж' sounds like 'ш'.",год,[got],year calendar
+Consonant Cluster Devoicing,"When consonants are clustered, the voicing of the entire cluster is determined by the final consonant in the group.",лодка,[ˈɫotkə],boat
+The Hard Sign (ъ),"The hard sign creates a pause, separating a prefix from a root that starts with a 'soft' vowel, preventing palatalization and creating a 'y' sound.",объект,[ɐbˈjekt],object
+The Soft Sign (ь),The soft sign does not make a sound itself. It indicates that the preceding consonant is soft (palatalized).,конь,[konʲ],horse
+"Ж and Ш (zh, sh)","The letters 'ж' [ʐ] and 'ш' [ʂ] are always hard and sound like the 's' in 'treasure' and 'sh' in 'shoe' respectively, but with the tongue curled further back.",шарф,[ʃarf],scarf
+"Ч and Щ (ch, shch)","The letters 'ч' [t͡ɕ] and 'щ' [ɕː] are always soft. 'ч' is like a soft 'ch' in 'church'. 'щ' is a long, hissing 'sh' sound.",чай,[t͡ɕæj],tea cup
+Ц (ts),The letter 'ц' [t͡s] is always hard and sounds like the 'ts' in the English word 'cats'.,цвет,[t͡svʲet],color palette
+The Russian R (р),"The Russian 'р' is a trilled or rolled 'r' [r], made by vibrating the tip of the tongue against the ridge behind the top teeth.",река,[rʲɪˈka],river

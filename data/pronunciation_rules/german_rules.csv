@@ -1,0 +1,15 @@
+rule,explanation,example_word,example_ipa,image_query
+Long vs. Short Vowels,"Vowels are long before a single consonant or when doubled (aa, ee, oo) or followed by 'h'. They are short before two or more consonants.",Staat vs Stadt,[ʃtaːt] vs [ʃtat],state building vs city
+"Umlauts (ä, ö, ü)",Umlauts change the vowel sound. 'ä' is like 'e' in 'bed' [ɛ]. 'ö' and 'ü' have no English equivalent; they are fronted versions of 'o' and 'u' made with rounded lips.,Käse,[ˈkɛːzə],cheese
+"Vowel Combinations (ei, ie, eu, äu)","'ie' is a long 'ee' sound [iː]. 'ei', 'ai', 'ey' are all 'eye' [aɪ]. 'eu' and 'äu' are both 'oy' [ɔʏ].",Eis,[aɪs],ice cube
+The Letter V,"In most native German words, 'v' is pronounced like 'f' [f]. In loanwords, it is often pronounced like 'v' [v].",Vater,[ˈfaːtɐ],father
+Final Consonant Devoicing,"Voiced consonants like 'b', 'd', and 'g' at the end of a word become voiceless, sounding like 'p', 't', and 'k' respectively.",Rad,[raːt],wheel
+"The ""ch"" sounds (Ich- & Ach-laut)","After front vowels (i, e, ä, ö, ü) 'ch' is a soft, hissing [ç]. After back vowels (a, o, u) it is a hard, throaty [x] sound.",Milch vs Buch,[mɪlç] vs [buːx],milk and book
+"The ""s"" sounds","At the start of a word or between vowels, 's' is voiced like 'z' in 'zoo' [z]. When it's 'ss', 'ß', or at the end of a word, it's voiceless like 's' in 'see' [s].",Sonne vs Straße,[ˈzɔnə] vs [ˈʃtraːsə],sun and street
+"SCH, SP, & ST","'sch' is always 'sh' [ʃ]. At the start of a word or syllable, 'sp' and 'st' are pronounced 'shp' [ʃp] and 'sht' [ʃt].",Schule,[ˈʃuːlə],school building
+The Letter Z,"The letter 'z' is always pronounced as 'ts' [ts], like the end of 'cats'.",Zug,[tsuːk],train
+PF,A combination sound [pf] where you start to say 'p' but release it as an 'f'.,Apfel,[ˈapfl̩],apple
+QU (DE),Pronounced as 'kv' [kv].,Qualle,[ˈkvalə],jellyfish
+The German R,The German 'r' can be pronounced in several ways. A common pronunciation is a 'gargled' sound at the back of the throat [ʁ] (uvular fricative).,Brot,[bʁoːt],bread
+-IG at end of word,"At the end of a word, the suffix '-ig' is pronounced like the 'soft ch' (Ich-laut), as if it were '-ich' [ɪç].",König,[ˈkøːnɪç],king
+Dsch,"This combination is pronounced like 'j' in English 'jam' [dʒ], and is mainly used for loanwords.",Dschungel,[ˈdʒʊŋəl],jungle

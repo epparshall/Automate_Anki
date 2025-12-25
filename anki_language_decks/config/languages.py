@@ -1,6 +1,13 @@
 # config/languages.py
 from typing import Dict
 
+# Common configuration for any pronunciation rules deck
+PRONUNCIATION_RULES_CONFIG = {
+    "csv_folder": "data/pronunciation_rules",
+    "required_columns": ["rule", "explanation", "example_word", "example_ipa", "image_query"],
+    "builder": "pronunciation_rules",
+}
+
 LANGUAGES: Dict[str, Dict] = {
     "French": {
         "code": "fr",
@@ -12,10 +19,8 @@ LANGUAGES: Dict[str, Dict] = {
                 "builder": "ipa",
             },
             "Pronunciation Rules": {
-                "csv_folder": "data/pronunciation_rules",
+                **PRONUNCIATION_RULES_CONFIG,
                 "csv_file": "french_rules.csv",
-                "required_columns": ["rule", "explanation", "example_word", "example_ipa", "image_query"],
-                "builder": "pronunciation_rules",
             },
         }
     },
@@ -28,6 +33,10 @@ LANGUAGES: Dict[str, Dict] = {
                 "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
                 "builder": "ipa",
             },
+            "Pronunciation Rules": {
+                **PRONUNCIATION_RULES_CONFIG,
+                "csv_file": "british_english_rules.csv",
+            },
         }
     },
     "Spanish": {
@@ -38,6 +47,10 @@ LANGUAGES: Dict[str, Dict] = {
                 "csv_file": "spanish_ipa_cards.csv",
                 "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
                 "builder": "ipa",
+            },
+            "Pronunciation Rules": {
+                **PRONUNCIATION_RULES_CONFIG,
+                "csv_file": "spanish_rules.csv",
             },
         }
     },
@@ -50,6 +63,10 @@ LANGUAGES: Dict[str, Dict] = {
                 "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
                 "builder": "ipa",
             },
+            "Pronunciation Rules": {
+                **PRONUNCIATION_RULES_CONFIG,
+                "csv_file": "german_rules.csv",
+            },
         }
     },
     "Russian": {
@@ -60,6 +77,10 @@ LANGUAGES: Dict[str, Dict] = {
                 "csv_file": "russian_ipa_cards.csv",
                 "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
                 "builder": "ipa",
+            },
+            "Pronunciation Rules": {
+                **PRONUNCIATION_RULES_CONFIG,
+                "csv_file": "russian_rules.csv",
             },
         }
     },

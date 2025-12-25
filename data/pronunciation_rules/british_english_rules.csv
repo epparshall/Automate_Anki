@@ -1,0 +1,16 @@
+rule,explanation,example_word,example_ipa,image_query
+Short vs. Long Vowels,"Vowels can be short (e.g., 'i' in 'ship' [ɪ]) or long (e.g., 'ee' in 'sheep' [iː]). Long vowels are marked with 'ː'.",ship vs sheep,[ʃɪp] vs [ʃiːp],ship and sheep
+"The ""Magic E""",A silent 'e' at the end of a word often makes the preceding vowel long. Compare 'mat' [mæt] and 'mate' [meɪt].,mate,[meɪt],friends
+The Schwa [ə],"The most common sound. It's a weak, unstressed 'uh' sound, found in unstressed syllables like the 'a' in 'about' or 'o' in 'memory'.",about,[əˈbaʊt],question mark
+R-Controlled Vowels,"When a vowel is followed by an 'r', the 'r' changes the vowel's sound (e.g., 'ar' in 'car' [ɑː], 'or' in 'fork' [ɔː], 'ur' in 'bird' [ɜː]).",car,[kɑː],red car
+Non-Rhotic Accent (RP),"In standard British English (RP), the 'r' is typically not pronounced unless it is followed by a vowel sound (e.g., 'car' is [kɑː], but 'car is' is [kɑːr‿ɪz]).",park,[pɑːk],park bench
+"Aspirated Plosives (p, t, k)","At the start of a stressed syllable, 'p', 't', and 'k' are pronounced with a strong puff of air. Hold your hand to your mouth to feel it.",pin,[pʰɪn],safety pin
+"The ""th"" sounds [θ, ð]","Place your tongue between your teeth. For [θ] (as in 'thumb'), just blow air. For [ð] (as in 'this'), make a voiced, buzzing sound.",thumb vs this,[θʌm] vs [ðɪs],thumb pointing
+"The ""ng"" sound [ŋ]","A single sound made at the back of the throat with air flowing through the nose, as in 'king' or 'sing'. Don't pronounce a hard 'g' at the end.",king,[kɪŋ],king crown
+Silent Consonants,"Many words have silent consonants, like the 'b' in 'comb', 'k' in 'knife', 'w' in 'write', or 'l' in 'walk'.",knife,[naɪf],kitchen knife
+Voiced vs. Voiceless Pairs,"Many consonants come in pairs, where the only difference is the vibration of vocal cords. E.g., /p/ (no voice) vs /b/ (voice), /s/ (no voice) vs /z/ (voice).",pea vs bee,[piː] vs [biː],pea and bee
+"The ""sh"" [ʃ] and ""zh"" [ʒ] sounds",'sh' [ʃ] is a hissing sound like in 'shoe'. Its voiced partner [ʒ] is the sound from the 's' in 'treasure' or 'vision'.,shoe vs treasure,[ʃuː] vs [ˈtreʒə],shoe and treasure chest
+"The ""ch"" [tʃ] and ""j"" [dʒ] sounds","'ch' [tʃ] is a 't' followed by 'sh', as in 'church'. Its voiced partner [dʒ] is a 'd' followed by 'zh', as in 'judge'.",church vs judge,[tʃɜːtʃ] vs [dʒʌdʒ],church and judge gavel
+Word Stress,"In words with more than one syllable, one syllable is stressed more strongly than others. Stress can change the meaning (e.g., 'RE-cord' (noun) vs 're-CORD' (verb)).",record (noun),[ˈrek.ɔːd],vinyl record
+Sentence Stress,"In a sentence, content words (nouns, main verbs, adjectives) are typically stressed, while function words (articles, prepositions) are not.",I went to the shops,[aɪ ˈwen tə ðə ˈʃɒps],shopping bags
+"Intrusive ""r""","In non-rhotic accents, an 'r' sound is sometimes inserted between two vowel sounds to make them easier to say, e.g., 'law and order' becomes 'law-r-and order'.",law and order,[lɔːr‿ən ˈɔːdə],law books
