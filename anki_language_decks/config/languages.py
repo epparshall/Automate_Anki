@@ -11,6 +11,12 @@ LANGUAGES: Dict[str, Dict] = {
                 "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
                 "builder": "ipa",
             },
+            "Pronunciation Rules": {
+                "csv_folder": "data/pronunciation_rules",
+                "csv_file": "french_rules.csv",
+                "required_columns": ["rule", "explanation", "example_word", "example_ipa", "image_query"],
+                "builder": "pronunciation_rules",
+            },
         }
     },
     "English (British)": {

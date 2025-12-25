@@ -1,26 +1,27 @@
 rule,explanation,example_word,example_ipa,image_query
-"Silent final consonants","Most final consonants are silent, especially S, T, D, X, P, Z. Remember CaReFuL: final C, R, F, L are usually pronounced.",parfait,/paʁ.fɛ/,perfect
-"CaReFuL exceptions","Final C, R, F, L (and sometimes B, K, Q) are pronounced at the end of words.",livre,/livʁ/,book
-"Nasal vowels basics","Vowels followed by M or N (in the same syllable) are nasalized: air flows through nose and mouth. The M/N is silent.",vin,/vɛ̃/,wine glass
-"AN/EN/EM nasal [ɑ̃]","AN, EN, EM at end or before consonant → nasal [ɑ̃] sound.",enfant,/ɑ̃.fɑ̃/,child
-"ON/OM nasal [ɔ̃]","ON, OM → nasal [ɔ̃] sound.",bonbon,/bɔ̃.bɔ̃/,candy
-"IN/IM/AIN/AIM/EIN nasal [ɛ̃]","IN, IM, AIN, AIM, EIN → nasal [ɛ̃] sound.",pain,/pɛ̃/,bread
-"UN/UM nasal [œ̃]","UN, UM → nasal [œ̃] (rounded) sound.",parfum,/paʁ.fœ̃/,perfume bottle
-"French R sound","The French R is guttural/uvular [ʁ], produced in the throat (like gargling).",rouge,/ʁuʒ/,red
-"French U sound [y]","U is a front rounded vowel: purse lips like 'oo' but say 'ee'.",tu,/ty/,lips
-"OU sound [u]","OU is back rounded like English 'oo' in food.",loup,/lu/,wolf
-"É accent [e]","É (acute accent) is closed [e], like 'ay' in 'day' but shorter.",café,/ka.fe/,coffee
-"È/Ê accent [ɛ]","È or Ê (grave or circumflex) is open [ɛ], like 'e' in 'bet'.",père,/pɛʁ/,father
-"Schwa (mute E)","Unaccented E in middle often [ə] (schwa) or drops entirely; final E usually silent.",le,/lə/,small
-"CH = [ʃ]","CH is 'sh' like English 'ship'.",chat,/ʃa/,cat
-"GN = [ɲ]","GN is like 'ny' in 'canyon'.",montagne,/mɔ̃.taɲ/,mountain
-"S between vowels [z]","S between vowels is voiced [z]; otherwise [s]. Final S silent (plural).",maison,/mɛ.zɔ̃/,house
-"Liaison: obligatory","Required after determiners (les, des, mon), pronouns (ils, vous), short adjectives.",les amis,/le.z‿a.mi/,friends
-"Liaison: optional","Possible in many cases; common in careful speech but often dropped casually.",tu as,/ty‿a/,you have
-"Liaison: forbidden","Never after 'et' (and), singular nouns, or aspirated H.",et un,/e œ̃/,no liaison
-"OI combination [wa]","OI is [wa] like 'wa' in 'watt'.",moi,/mwa/,mirror
-"EU/ŒU [ø]/[œ]","EU/ŒU closed [ø] (like German 'ö'); open [œ] before R or consonant.",bleu vs sœur,/blø/ vs /sœʁ/,blue sky
-"AI/EI [ɛ]","AI/EI usually [ɛ] like open E.",mais,/mɛ/,but
-"AU/EAU [o]","AU/EAU is closed [o] like 'oh'.",eau,/o/,water
-"Final ENT silent","ENT at end of 3rd person plural verbs is silent.",ils parlent,/il paʁl/,speaking
-"Stress and rhythm","French has even syllable stress (no strong accent); rhythm is syllable-timed.",bonjour,/bɔ̃.ʒuʁ/,hello greeting
+É (accent aigu),"Pronounced as a tense, closed [e]. Like the 'a' in English 'say', but without the 'y' glide at the end.",café,[ka.fe],coffee cup
+È / Ê (grave / circumflex),"Pronounced as an open, relaxed [ɛ]. Like the 'e' in English 'bed'.",forêt,[fɔ.ʁɛ],forest
+The Schwa (e muet),"An unaccented 'e' is often silent at the end of words or can be a short, unstressed 'uh' sound [ə] inside words.",table,[tabl],table
+U vs. OU,"To say 'u' [y], make an 'ee' sound while your lips are tightly rounded. 'OU' [u] is simply the English 'oo' sound in 'moon'.",lune (u) vs loup (ou),[lyn] vs [lu],moon and wolf
+AI / EI,"These combinations are usually pronounced as an open 'eh' sound [ɛ], just like È or Ê.",lait,[lɛ],milk carton
+AU / EAU,"These combinations are pronounced as a closed 'oh' sound [o], like in 'boat'.",gâteau,[ɡa.to],cake
+OI,"This combination is pronounced 'wa' [wa], like in the English word 'watt'.",roi,[ʁwa],king
+EU / ŒU,A unique sound. Say 'eh' [ɛ] but with your lips rounded. Can be more closed [ø] or open [œ].,fleur,[flœʁ],flower
+Nasal Vowels (Basics),"When a vowel is followed by 'n' or 'm' in the same syllable, the vowel becomes nasal and the 'n' or 'm' is not pronounced.",vin,[vɛ̃],wine glass
+AN / EN / AM / EM,"These usually create the deep, open nasal sound [ɑ̃]. Drop your jaw as if saying 'ah' but direct air through your nose.",enfant,[ɑ̃.fɑ̃],child playing
+ON / OM,These create the rounded nasal sound [ɔ̃]. Make an 'oh' sound through your nose.,pont,[pɔ̃],bridge
+IN / IM / AIN / EIN / YM,These all typically create the nasal sound [ɛ̃]. Make an 'eh' sound through your nose.,pain,[pɛ̃],bread loaf
+Silent Final Consonants,"Most final consonants (like -s, -t, -d, -x, -p, -z) are silent.",chat,[ʃa],cat
+"The ""CaReFuL"" Rule","As an exception, the final consonants C, R, F, L are usually pronounced. (Be CaReFuL!)",sac,[sak],bag
+C,"Pronounced as [k] (hard) before a, o, u. Pronounced as [s] (soft) before e, i, y. A cedilla (ç) makes it always [s].",garçon,[gaʁ.sɔ̃],boy
+G,"Pronounced as [g] (hard) before a, o, u. Pronounced as [ʒ] (like 's' in 'treasure') before e, i, y.",girafe,[ʒi.ʁaf],giraffe
+S,Pronounced as [s] at the start of words or when doubled (-ss-). Pronounced as [z] when it is between two vowels.,maison,[mɛ.zɔ̃],house
+CH,"Almost always pronounced as 'sh' [ʃ], like in English 'shoe'.",chapeau,[ʃa.po],hat
+GN,"Pronounced as [ɲ], like the 'ny' in 'canyon' or Spanish 'ñ'.",montagne,[mɔ̃.taɲ],mountain
+QU / GU,"'QU' is pronounced [k], like English 'k'. 'GU' before a vowel is pronounced [g], like English 'g' in 'go'. The 'u' is silent.",guitare,[gi.taʁ],guitar
+ILL,"After a vowel, 'ill' is often pronounced like the 'y' in 'yes' [j].",famille,[fa.mij],family
+The French R,The French 'r' [ʁ] is made in the back of the throat. It is similar to gargling or the 'ch' in Scottish 'loch'.,rat,[ʁa],rat
+H (muet vs. aspiré),"'H' is always silent. 'H muet' allows liaison (l'homme). 'H aspiré' acts like a consonant, blocking liaison (le héros).",hibou,[i.bu],owl
+Liaison,A normally silent final consonant is pronounced at the start of the next word if that word begins with a vowel.,les amis,[le.z‿a.mi],friends talking
+Silent Plurals & Verbs,The final '-s' or '-x' for plural nouns/adjectives is silent. The '-ent' ending for 3rd person plural verbs is also silent.,ils parlent,[il paʁl],people talking
+Rhythm & Stress,Stress falls evenly on the last syllable of a word or phrase. There are no strong individual word stresses like in English.,bonjour,[bɔ̃.ʒuʁ],greeting card
