@@ -1,165 +1,129 @@
 # Anki Language Deck Builder
 
-**Automated creation of rich, media-enhanced Anki decks for any language**
+**Automated creation of rich, media-enhanced Anki decks for language learning.**
 
-This tool lets you generate high-quality Anki flashcards for **any language** you want to learn. Out of the box, it includes full support for **English (British), French, Spanish, German, and Russian** (IPA decks). The modular design makes adding new languages simple.
+This tool automatically generates high-quality Anki flashcards for multiple languages and deck types. All cards are generated with native-speaker audio, relevant images, and are added directly to your Anki collection using AnkiConnect.
 
-Supported deck types:
-- **IPA Phonetics** . Master individual sounds with articulation tips
+---
 
-Every card includes:
-- Clean, styled HTML formatting
-- Native-speaker **audio** (Edge TTS)
-- Relevant **images** (via Pixabay API)
-- Automatic tagging and **nested deck organization** (e.g., `French::IPA`, `Spanish::IPA`)
+## Supported Decks
 
-Cards are added directly to Anki using **AnkiConnect** . No manual import needed.
+Out of the box, the following decks are configured and ready to be built:
+
+| Language          | IPA Phonetics | Pronunciation Rules | Top 625 Vocabulary |
+| ----------------- | :-----------: | :-----------------: | :----------------: |
+| **English (GB)**  |       ✅       |          ✅          |         ✅         |
+| **French**        |       ✅       |          ✅          |         ✅         |
+| **Spanish**       |       ✅       |          ✅          |         ✅         |
+| **German**        |       ✅       |          ✅          |         ✅         |
+| **Russian**       |       ✅       |          ✅          |         ✅         |
 
 ---
 
 ## Features
 
-- **Language-Agnostic & Config-Driven** . Add any language or deck type via `config/languages.py`
-- **Smart Skipping** . Automatically skips decks that already exist in Anki
-- **Automatic Media** . TTS audio + high-quality image search
-- **Duplicate Handling** . Skips notes if an identical "Front" field exists within the same language.
-- **Nested Decks** . Clean hierarchy for multiple languages and deck types
-- **Highly Extensible** . New languages, cloze cards, custom note types
-
----
-
-## Project Structure
-
-```
-anki-language-deck-builder/
-├── run.py                          # Easy launcher (run this)
-├── .env                            # PIXABAY_API_KEY (optional)
-├── data/
-│   ├── ipa_card_data/
-│   │   └── french_ipa_cards.csv
-│   ├── pronunciation_rules/
-│   │   └── french_rules.csv
-│   └── vocabulary/
-└── anki_language_decks/
-    ├── __init__.py
-    ├── main.py
-    ├── anki_client.py
-    ├── deck_builder.py
-    ├── media_helper.py
-    ├── csv_loader.py
-    └── config/
-        └── languages.py
-```
+- **Multi-Language & Multi-Deck**: Build decks for various languages and types, all defined in a single configuration file.
+- **Rich Media**: Every card includes native-speaker audio (`Microsoft Edge TTS`) and relevant images (`Pixabay API`).
+- **Smart Duplicate Handling**:
+    - Uniqueness across languages is ensured by adding a language suffix (e.g., `(fr)`) to the front of cards.
+    - Uniqueness within a single CSV is handled by skipping repeated entries during a run.
+    - Uniqueness across multiple runs is handled by checking for existing notes in Anki (scoped by language tag) before adding.
+- **Nested Decks**: Automatically organizes cards into a clean hierarchy (e.g., `French::IPA`, `Spanish::Basic Vocabulary`).
+- **Direct Anki Integration**: Uses `AnkiConnect` to add and update cards directly. No manual CSV import required.
+- **Extensible**: Designed to be easily extended with new languages or entirely new deck types.
 
 ---
 
 ## Requirements
 
 - **Python 3.8+**
-- **Anki** running with **AnkiConnect** enabled  
-  (default: `http://localhost:8765`)
-- Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Optional:
-- Free Pixabay API key from pixabay.com/api/docs
+- **Anki** desktop application running with the **AnkiConnect** add-on installed and enabled.
+- An internet connection for fetching media.
+- A free **Pixabay API key** for image fetching (optional, but recommended).
 
 ---
 
 ## Setup
 
-1. Install Anki and enable the AnkiConnect add-on.
-2. Start Anki.
-3. (Optional) Create a `.env` file in the project root:
+1.  **Install Anki & AnkiConnect**:
+    - Download and install [Anki](https://apps.ankiweb.net/).
+    - Open Anki, go to `Tools > Add-ons`, click `Get Add-ons...`, and paste the code `2055492159`.
+    - Restart Anki.
 
-```env
-PIXABAY_API_KEY=your_key_here
-```
+2.  **Install Python Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Images are skipped if no key is provided.
+3.  **Set Up API Key (Optional)**:
+    - Get a free API key from [pixabay.com/api/docs](https://pixabay.com/api/docs/).
+    - Create a file named `.env` in the project root directory.
+    - Add your API key to the `.env` file like this:
+      ```
+      PIXABAY_API_KEY=your_key_here
+      ```
+    - If no key is provided, images will be skipped.
 
 ---
 
 ## Usage
 
-From the project root, run:
-
-```bash
-python run.py
-```
-
-- First run . Builds all configured decks
-- Subsequent runs . Skips existing decks automatically (very fast)
-- To force a full rebuild . Delete decks and notes from Anki, then delete the corresponding CSV file(s) and re-run.
-
-Open Anki and sync. Your nested decks will appear.
+1.  Make sure Anki is open and running in the background.
+2.  From the project root directory, run the script:
+    ```bash
+    python run.py
+    ```
+- **First run**: Builds all decks configured in `languages.py`.
+- **Subsequent runs**: Automatically skips decks that already have notes, making it fast to run again.
 
 ---
 
-## Adding New Languages or Decks
+## Customization
 
-All configuration lives in:
+### Adding a New Language
 
-```
-anki_language_decks/config/languages.py
-```
-
-Example . Adding a Japanese IPA deck:
-
-```python
-"Japanese": {
-    "code": "ja", # ISO 639-1 code
-    "tts_voice": "ja-JP-NanamiNeural", # Check Edge TTS voices
-    "subdecks": {
-        "IPA": {
-            "csv_folder": "data/ipa_card_data",
-            "csv_file": "japanese_ipa_cards.csv",
-            "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
-            # If using custom models/fields, add relevant config here.
-            # Otherwise, it will use the default 'Basic' Anki model.
+To add a new language (e.g., Japanese), you would:
+1.  Create the necessary CSV data files (e.g., `data/ipa_card_data/japanese_ipa_cards.csv`).
+2.  Open `anki_language_decks/config/languages.py`.
+3.  Add a new entry to the `LANGUAGES` dictionary:
+    ```python
+    "Japanese": {
+        "name": "Japanese",
+        "native_name": "日本語",
+        "code": "ja", # Used for TTS
+        "subdecks": {
+            "IPA": {
+                "csv_folder": "data/ipa_card_data",
+                "csv_file": "japanese_ipa_cards.csv",
+                "required_columns": ["ipa", "description", "example_word", "english_translation", "word_ipa"],
+                "builder": "ipa",
+            },
         }
-    }
-}
-```
+    },
+    ```
+4.  Open `anki_language_decks/media_helper.py` and add the new language code and a corresponding TTS voice to the `generate_tts_audio` function.
 
-Create the corresponding CSV in `data/` and run the script again.
+### Adding a New Deck Type
 
----
-
-## Example Card Layouts
-
-### IPA Card (any language)
-
-Front:
-```
-[ʁ] (fr)
-```
-
-Back:
-```
-Example: rouge [ʁuʒ]
-Tongue back, uvular fricative (gargle-like)
-English: red
-[Image] [Audio]
-```
+To add a new deck type (e.g., "Grammar Rules"):
+1.  Create your CSV data file (e.g., `data/grammar/french_grammar.csv`).
+2.  Open `anki_language_decks/deck_builder.py` and add a new method, `build_grammar_deck`. This will contain the logic for how to format the front and back of your grammar cards.
+3.  Open `anki_language_decks/main.py` and add a new `if "Grammar Rules" in subdecks:` block to the main loop to call your new builder method.
 
 ---
 
-## Notes & Tips
+## Troubleshooting
 
-- All media is embedded directly in Anki
-- Edge TTS is reliable for most languages
-- Image quality depends on Pixabay results
-- To rebuild decks . Delete in Anki or disable skipping
-- Full UTF-8 support, including IPA symbols
+**Error: `RuntimeError: cannot create note because it is a duplicate`**
+-   This means Anki believes a card you're trying to add already exists.
+-   **Cause**: This can happen if you have old versions of cards in your collection from previous runs, especially if the card format has changed.
+-   **Solution**:
+    1.  Open the Anki **Browser**.
+    2.  Search for the cards causing the issue. For example, to find all IPA cards, you can search for `tag:ipa`. To find all French cards, search for `tag:french`.
+    3.  Select all the conflicting cards and delete them.
+    4.  Re-run the script.
 
 ---
 
 ## License
-
-MIT License . Feel free to use, modify, and share.
-
-Happy language learning 🌍✨
+MIT License. Feel free to use, modify, and share.
